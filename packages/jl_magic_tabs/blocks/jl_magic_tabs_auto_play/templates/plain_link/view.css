@@ -1,0 +1,90 @@
+/*
+Magic Tabs by John Liddiard (aka JohntheFish)
+www.jlunderwater.co.uk
+This software is licensed under the terms described in the concrete5.org marketplace.
+Please find the add-on there for the latest license copy.
+
+Create a tabbed interface simply by inserting magic tabs blocks into the page
+
+Styles for auto_play play and pause buttons
+
+The class jl_magic_tabs_autoplay_default should be changed to whatever class any custom
+template provides. The purpose is to facilitate different player stylings on different
+tab sets on the same page.
+
+The styles of this template are designed to blend with the default MT template.
+Creating templates to match other tab templates should not be difficult, there are only
+a few colurs and dimensions.
+*/
+
+ul.jl_magic_tabs_autoplay_player.jl_magic_tabs_autoplay_plain_link{
+    list-style: none;
+}
+ul.jl_magic_tabs_autoplay_player.jl_magic_tabs_autoplay_plain_link>li{
+    list-style: none;
+    float:left;
+    padding: 2px;
+    margin-left:0!important;
+}
+ul.jl_magic_tabs_autoplay_player.jl_magic_tabs_autoplay_plain_link.jl_magic_tabs_playing>li.jl_magic_tabs_play{
+    display:none;
+}
+ul.jl_magic_tabs_autoplay_player.jl_magic_tabs_autoplay_plain_link:not(.jl_magic_tabs_playing)>li.jl_magic_tabs_play{
+    display:inline-block;
+}
+ul.jl_magic_tabs_autoplay_player.jl_magic_tabs_autoplay_plain_link.jl_magic_tabs_playing>li.jl_magic_tabs_pause{
+    display:inline-block;
+}
+ul.jl_magic_tabs_autoplay_player.jl_magic_tabs_autoplay_plain_link:not(.jl_magic_tabs_playing)>li.jl_magic_tabs_pause{
+    display:none;
+}
+
+/*
+When the list has the class jl_magic_tabs_additional_controls, the buttons are moved by js onto the
+tab bar and this class decides where they are placed. To make it work, the tab controls container
+needs a relative position.
+*/
+ul.jl_magic_tabs_autoplay_player.jl_magic_tabs_autoplay_plain_link.jl_magic_tabs_additional_controls{
+    display:none;
+    position:absolute;
+    /*
+    When designing a player template to work with
+    other tab layous, such as vertical tabs,
+    these are the styles to edit/change/adjust/replace
+    */
+    right:0;
+    top:0;
+}
+/* Adjustments for accordion and vertical templates */
+.jl_magic_tabs_vertical_left ul.jl_magic_tabs_autoplay_player.jl_magic_tabs_autoplay_plain_link.jl_magic_tabs_additional_controls{
+    top:-20px;
+    left:-22px;
+    right:auto;
+}.jl_magic_tabs_vertical_right ul.jl_magic_tabs_autoplay_player.jl_magic_tabs_autoplay_plain_link.jl_magic_tabs_additional_controls{
+    top:-20px;
+}
+.jl_magic_tabs_accordion ul.jl_magic_tabs_autoplay_player.jl_magic_tabs_autoplay_plain_link.jl_magic_tabs_additional_controls{
+    top:-20px;
+    left:auto!important;
+    right:0!important;
+}
+
+div.jl_magic_tabs_controls{
+    position:relative;
+}
+/*
+Prevent the above positioning css in edit mode
+*/
+.ccm-area-move-enabled ul.jl_magic_tabs_autoplay_player.jl_magic_tabs_additional_controls{
+    display:block!important;
+    position:relative!important;
+    right:auto!important;
+    top:auto!important;
+    left:auto!important;
+    bottom:auto!important;
+}
+.ccm-area-move-enabled ul.jl_magic_tabs_autoplay_player>li.jl_magic_tabs_play,
+.ccm-area-move-enabled ul.jl_magic_tabs_autoplay_player>li.jl_magic_tabs_pause{
+    float:none!important;
+    display:inline-block!important;
+}

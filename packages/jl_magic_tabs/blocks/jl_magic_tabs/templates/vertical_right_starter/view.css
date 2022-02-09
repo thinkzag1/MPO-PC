@@ -1,0 +1,217 @@
+/*
+Magic Tabs by John Liddiard (aka JohntheFish)
+www.jlunderwater.co.uk
+This software is licensed under the terms described in the concrete5.org marketplace.
+Please find the add-on there for the latest license copy.
+
+Create a tabbed interface simply by inserting magic tabs blocks into the page
+
+THIS TEMPLATE IS INTENDED TO SERVE AS A STARTING POINT FOR THOSE WHO WANT VERTICAL TABS
+
+The use of !important to force styling is dependant on the theme the tabs are used with. Some themes will not
+need it at all. Some themes will need it in more places.
+*/
+
+div.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_screen{
+    margin-left:5px;
+    /* The line across the right of the tabs */
+    border-left: 1px solid #e6e6e6;
+    float:right;
+
+    /* The width of the tabs. The tab body automatically takes up any remaining width */
+    width:120px;
+}
+
+.jl_magic_tabs_controls{
+    position:relative;
+}
+
+/*
+http://stackoverflow.com/questions/1260122/expand-div-to-take-remaining-width
+*/
+div.jl_magic_tabs_vertical_right_starter_tab_body{
+    overflow:hidden;
+    padding-top:5px
+}
+
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_screen ul{
+    clear:both;
+    padding: 0;
+    list-style: none;
+    margin-right: 0px;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_screen ul li{
+    margin-top:0px;
+    /* need this to kill the browser default indent on li elements*/
+    margin-left:0px;
+    margin-bottom: 3px;
+}
+
+/* Basic tab */
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_screen ul.jl_magic_tabs li a{
+    border-style:outset outset outset none;
+    font-family: Arial, Helvetica, sans-serif!important;
+    font-size: 14px!important;
+    color: #888!important;
+    text-align:left;
+    display: block;
+    line-height: 16px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-bottom: 3px;
+    background-color: #fafacd;
+    border: 1px solid #fafab8;
+    border-right-color: transparent;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Basic tab hover*/
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_screen ul.jl_magic_tabs li a:hover{
+    border-style:inset inset inset none;
+    color: #666!important;
+    background-color: #fafa91;
+    border: 1px solid #fafa91;
+    border-left-color: transparent;
+
+    /* removes the default undeline on links */
+    text-decoration: none!important;
+    /* but keep the cursor change to show it is clickable */
+    cursor:pointer;
+}
+
+/* Active tab */
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_screen li.jl_magic_tabs_vertical_right_starter_active a.jl_magic_tabs_vertical_right_starter_active{
+    color: #444!important;
+    border-style:inset inset inset none;
+    background-color: #c8fac8;
+    border: 1px solid #c8fac8;
+    border-left-color: transparent;
+}
+
+/* Active tab hover - mainly here to stop the hover from the basic tab pushiung through*/
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_screen li.jl_magic_tabs_vertical_right_starter_active a.jl_magic_tabs_vertical_right_starter_active:hover{
+    border-style:inset inset inset none;
+    color: #444!important;
+    background-color: #c8fac8;
+    border: 1px solid #c8fac8;
+    border-left-color: transparent;
+
+    /* removes the default undeline on links */
+    text-decoration: none!important;
+    /* makes sure that the active tab does not react on hover */
+    cursor:default;
+}
+
+/*
+Accordion styles - need to virtually re-write the styles from the conventional starter.
+Its possible some could be shared with above, but this is easiest.
+*/
+
+div.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_accordion{
+    margin-bottom:5px;
+    /* The line across beneath the tabs */
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_accordion ul{
+    clear:both;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_accordion ul li{
+    float:left;
+    margin-left:5px;
+}
+
+/* Basic tab */
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_accordion ul.jl_magic_tabs li a{
+    border-style:outset outset none outset;
+    font-family: Arial, Helvetica, sans-serif!important;
+    font-size: 16px!important;
+    color: #888!important;
+    display: block;
+    line-height: 16px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 3px;
+    background-color: #fafacd;
+    border: 1px solid #fafab8;
+    border-bottom-color: transparent;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Basic tab hover*/
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_accordion ul.jl_magic_tabs li a:hover{
+    border-style:inset inset none inset;
+    color: #666!important;
+    background-color: #fafa91;
+    border: 1px solid #fafa91;
+    border-bottom-color: transparent;
+
+    /* removes the default undeline on links */
+    text-decoration: none!important;
+    /* but keep the cursor change to show it is clickable */
+    cursor:pointer;
+}
+
+/* Active tab */
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_accordion li.jl_magic_tabs_vertical_right_starter_active a.jl_magic_tabs_vertical_right_starter_active{
+    color: #444!important;
+    border-style:inset inset none inset;
+    background-color: #c8fac8;
+    border: 1px solid #c8fac8;
+    border-bottom-color: transparent;
+}
+
+/* Active tab hover - mainly here to stop the hover from the basic tab pushiung through*/
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_accordion li.jl_magic_tabs_vertical_right_starter_active a.jl_magic_tabs_vertical_right_starter_active:hover{
+    border-style:inset inset none inset;
+    color: #444!important;
+    background-color: #c8fac8;
+    border: 1px solid #c8fac8;
+    border-bottom-color: transparent;
+
+    /* removes the default undeline on links */
+    text-decoration: none!important;
+    /* makes sure that the active tab does not react on hover */
+    cursor:default;
+}
+
+
+
+/* Fill whole width */
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li {
+    width:100%;
+}
+
+/* Cursor so to indicate click to collapse */
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li>a.jl_magic_tabs_vertical_right_starter_active {
+    cursor:pointer;
+}
+
+/* + to indicate expandable */
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li>a:after {
+    content: "+";
+    font-weight:900;
+    float: right;
+    text-decoration: none;
+    font-size:140%;
+}
+/* - to indicate collapsible */
+.jl_magic_tabs_vertical_right_starter.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li>a.jl_magic_tabs_vertical_right_starter_active:after {
+    content: "-";
+}
+

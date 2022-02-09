@@ -1,0 +1,675 @@
+/*
+Magic Tabs by John Liddiard (aka JohntheFish)
+www.jlunderwater.co.uk
+This software is licensed under the terms described in the concrete5.org marketplace.
+Please find the add-on there for the latest license copy.
+
+Create a tabbed interface simply by inserting magic tabs blocks into the page
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// THIS TEMPLATE HAS BEEN BUILT TO DEMONSTRATE INTEGRATION OF
+// TAB CSS GENERATED WITH THE jQuery.UI THEME ROLLER
+//
+// IT IS NOT A PERFECT IMPLEMENTATION. Some styles from other parts of concrete5 bleed through
+// Theme-rollered tabs styles should only be used where other aspects of a site use a jQuery.UI
+// rolled theme and good compatibility is needed.
+//
+// If all you want is some coloured tabs to match your theme, look instead at the 
+// self_contained_starter_template
+//
+//
+// A whole load of unused stuff has been left in, but commented out, to #
+// show what can be removed from the generated ui css if all you want is magic tabs
+// This could be refined further if you really wanted to !
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+*/
+
+.jl_magic_tabs_controls{
+    position:relative;
+}
+
+
+/*///////////////////////////////////////////////////
+
+VERY IMPORTANT.
+
+css has been added by hand to bully c5 dashboard ui styles
+into submission
+
+such styles are noted by comments "MAGIC TABS"
+
+In the theme roller, the scope added is
+"div.ccm-page main .jl_magic_tabs_hot_sneaks"
+
+////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+/*! jQuery UI - v1.11.4 - 2015-04-14
+* http://jqueryui.com
+* Includes: core.css, tabs.css, theme.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Gill%20Sans%2CArial%2Csans-serif&fwDefault=bold&fsDefault=1.2em&cornerRadius=4px&bgColorHeader=35414f&bgTextureHeader=dots_small&bgImgOpacityHeader=35&borderColorHeader=2c4359&fcHeader=e1e463&iconColorHeader=e1e463&bgColorContent=ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=2c4359&iconColorContent=c02669&bgColorDefault=93c3cd&bgTextureDefault=diagonals_small&bgImgOpacityDefault=50&borderColorDefault=93c3cd&fcDefault=333333&iconColorDefault=ffffff&bgColorHover=ccd232&bgTextureHover=diagonals_small&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=db4865&bgTextureActive=diagonals_small&bgImgOpacityActive=40&borderColorActive=ff6b7f&fcActive=ffffff&iconColorActive=ffffff&bgColorHighlight=ffff38&bgTextureHighlight=dots_medium&bgImgOpacityHighlight=80&borderColorHighlight=b4d100&fcHighlight=363636&iconColorHighlight=88a206&bgColorError=ff3853&bgTextureError=diagonals_small&bgImgOpacityError=50&borderColorError=ff6b7f&fcError=ffffff&iconColorError=ffeb33&bgColorOverlay=f7f7ba&bgTextureOverlay=white_lines&bgImgOpacityOverlay=85&opacityOverlay=80&bgColorShadow=ba9217&bgTextureShadow=flat&bgImgOpacityShadow=75&opacityShadow=20&thicknessShadow=10px&offsetTopShadow=8px&offsetLeftShadow=8px&cornerRadiusShadow=5px
+* Copyright 2015 jQuery Foundation and other contributors; Licensed MIT */
+
+/* Layout helpers
+----------------------------------
+.ui-helper-hidden {
+        display: none;
+}
+.ui-helper-hidden-accessible {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+}
+.ui-helper-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        line-height: 1.3;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+        content: "";
+        display: table;
+        border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+        clear: both;
+}
+.ui-helper-clearfix {
+        min-height: 0; /* support: IE7
+}
+.ui-helper-zfix {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        opacity: 0;
+        filter:Alpha(Opacity=0); /* support: IE8
+}
+
+.ui-front {
+        z-index: 100;
+}
+*/
+
+
+/* Interaction Cues
+----------------------------------
+.ui-state-disabled {
+        cursor: default !important;
+}
+*/
+
+/* Icons
+----------------------------------
+
+/* states and images
+.ui-icon {
+        display: block;
+        text-indent: -99999px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+}
+*/
+
+/* Misc visuals
+----------------------------------
+
+/* Overlays
+.ui-widget-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+.ui-tabs {
+        position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed")
+        padding: .2em;
+}
+.ui-tabs .ui-tabs-nav {
+        margin: 0;
+        padding: .2em .2em 0;
+}
+.ui-tabs .ui-tabs-nav li {
+        list-style: none;
+        float: left;
+        position: relative;
+        top: 0;
+        margin: 1px .2em 0 0;
+        border-bottom-width: 0;
+        padding: 0;
+        white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+        float: left;
+        padding: .5em 1em;
+        text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+        margin-bottom: -1px;
+        padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+        cursor: text;
+}
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+        cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+        display: block;
+        border-width: 0;
+        padding: 1em 1.4em;
+        background: none;
+}
+*/
+
+/* Component containers
+----------------------------------*/
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget {
+    font-family: Gill Sans,Arial,sans-serif;
+    font-size: 1.2em;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget .ui-widget {
+    font-size: 1em;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget input,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget select,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget textarea,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget button {
+    font-family: Gill Sans,Arial,sans-serif;
+    font-size: 1em;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content {
+    border: 1px solid #aaaaaa;
+    background: #ffffff url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
+    color: #2c4359;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content a {
+    color: #2c4359;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header {
+    border: 1px solid #2c4359;
+    background: #35414f url("images/ui-bg_dots-small_35_35414f_2x2.png") 50% 50% repeat;
+    color: #e1e463;
+    font-weight: bold;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header a {
+    color: #e1e463;
+}
+
+/* Interaction states
+----------------------------------*/
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-default,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-state-default,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-state-default {
+    border: 1px solid #93c3cd;
+    background: #93c3cd url("images/ui-bg_diagonals-small_50_93c3cd_40x40.png") 50% 50% repeat; /*MAGIC TABS important*/
+    font-weight: bold;
+    color: #333333;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-default a,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-default a:link,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-default a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+
+/*
+MAGIC TABS Need to add this to make hover state work
+*/
+div.ccm-page main .jl_magic_tabs_hot_sneaks ul.jl_magic_tabs{
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+/* end */
+
+/*
+MAGIC TABS Need to add this to make hover state work
+*/
+div.ccm-page main .jl_magic_tabs_hot_sneaks li.ui-state-default a:hover,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header li.ui-state-default a:hover{
+    background: none;
+}
+/* end */
+
+/*
+MAGIC TABS Need to add this to make hover state work
+*/
+div.ccm-page main .jl_magic_tabs_hot_sneaks li.ui-state-default:hover,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header li.ui-state-default:hover,
+/* end */
+
+
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-hover,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-state-hover,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-state-hover,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-focus,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-state-focus,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-state-focus {
+    border: 1px solid #999999;
+    background: #ccd232 url("images/ui-bg_diagonals-small_75_ccd232_40x40.png") 50% 50% repeat; /* MAGIC TABS important */
+    font-weight: bold;
+    color: #212121;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-hover a,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-hover a:hover,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-hover a:link,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-hover a:visited,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-focus a,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-focus a:hover,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-focus a:link,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-focus a:visited {
+    color: #212121;
+    text-decoration: none;
+}
+
+/*
+MAGIC TABS Need to add this to make hover state work
+*/
+div.ccm-page main .jl_magic_tabs_hot_sneaks a.ui-tabs-selected.ui-state-active:hover{
+    cursor:default;
+}
+/* end */
+
+
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-active,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-state-active,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-state-active {
+    border: 1px solid #ff6b7f;
+    background: #db4865 url("images/ui-bg_diagonals-small_40_db4865_40x40.png") 50% 50% repeat !important; /* MAGIC TABS important */
+    font-weight: bold;
+    color: #ffffff;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-active a,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-active a:link,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-active a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-highlight,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-state-highlight,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-state-highlight {
+    border: 1px solid #b4d100;
+    background: #ffff38 url("images/ui-bg_dots-medium_80_ffff38_4x4.png") 50% 50% repeat;
+    color: #363636;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-highlight a,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-state-highlight a,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-state-highlight a {
+    color: #363636;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-error,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-state-error,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-state-error {
+    border: 1px solid #ff6b7f;
+    background: #ff3853 url("images/ui-bg_diagonals-small_50_ff3853_40x40.png") 50% 50% repeat;
+    color: #ffffff;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-error a,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-state-error a,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-state-error a {
+    color: #ffffff;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-error-text,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-state-error-text,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-state-error-text {
+    color: #ffffff;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-priority-primary,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-priority-primary,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-priority-primary {
+    font-weight: bold;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-priority-secondary,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-priority-secondary,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-priority-secondary {
+    opacity: .7;
+    filter:Alpha(Opacity=70); /* support: IE8 */
+    font-weight: normal;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-disabled,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-state-disabled,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-state-disabled {
+    opacity: .35;
+    filter:Alpha(Opacity=35); /* support: IE8 */
+    background-image: none;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-disabled .ui-icon {
+    filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon {
+        width: 16px;
+        height: 16px;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-content .ui-icon {
+        background-image: url("images/ui-icons_c02669_256x240.png");
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-header .ui-icon {
+        background-image: url("images/ui-icons_e1e463_256x240.png");
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-default .ui-icon {
+        background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-hover .ui-icon,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-focus .ui-icon {
+        background-image: url("images/ui-icons_454545_256x240.png");
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-active .ui-icon {
+        background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-highlight .ui-icon {
+        background-image: url("images/ui-icons_88a206_256x240.png");
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-error .ui-icon,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-state-error-text .ui-icon {
+        background-image: url("images/ui-icons_ffeb33_256x240.png");
+}
+
+/* positioning
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-blank { background-position: 16px 16px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-carat-1-n { background-position: 0 0; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-carat-1-ne { background-position: -16px 0; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-carat-1-e { background-position: -32px 0; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-carat-1-se { background-position: -48px 0; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-carat-1-s { background-position: -64px 0; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-carat-1-sw { background-position: -80px 0; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-carat-1-w { background-position: -96px 0; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-carat-1-nw { background-position: -112px 0; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-carat-2-n-s { background-position: -128px 0; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-carat-2-e-w { background-position: -144px 0; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-triangle-1-n { background-position: 0 -16px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-triangle-1-ne { background-position: -16px -16px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-triangle-1-e { background-position: -32px -16px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-triangle-1-se { background-position: -48px -16px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-triangle-1-s { background-position: -64px -16px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-triangle-1-sw { background-position: -80px -16px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-triangle-1-w { background-position: -96px -16px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-triangle-1-nw { background-position: -112px -16px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-1-n { background-position: 0 -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-1-ne { background-position: -16px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-1-e { background-position: -32px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-1-se { background-position: -48px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-1-s { background-position: -64px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-1-sw { background-position: -80px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-1-w { background-position: -96px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-1-nw { background-position: -112px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-4 { background-position: 0 -80px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-arrow-4-diag { background-position: -16px -80px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-extlink { background-position: -32px -80px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-newwin { background-position: -48px -80px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-refresh { background-position: -64px -80px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-shuffle { background-position: -80px -80px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-transfer-e-w { background-position: -96px -80px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-transferthick-e-w { background-position: -112px -80px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-folder-collapsed { background-position: 0 -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-folder-open { background-position: -16px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-document { background-position: -32px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-document-b { background-position: -48px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-note { background-position: -64px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-mail-closed { background-position: -80px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-mail-open { background-position: -96px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-suitcase { background-position: -112px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-comment { background-position: -128px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-person { background-position: -144px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-print { background-position: -160px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-trash { background-position: -176px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-locked { background-position: -192px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-unlocked { background-position: -208px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-bookmark { background-position: -224px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-tag { background-position: -240px -96px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-home { background-position: 0 -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-flag { background-position: -16px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-calendar { background-position: -32px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-cart { background-position: -48px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-pencil { background-position: -64px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-clock { background-position: -80px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-disk { background-position: -96px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-calculator { background-position: -112px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-zoomin { background-position: -128px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-zoomout { background-position: -144px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-search { background-position: -160px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-wrench { background-position: -176px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-gear { background-position: -192px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-heart { background-position: -208px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-star { background-position: -224px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-link { background-position: -240px -112px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-cancel { background-position: 0 -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-plus { background-position: -16px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-plusthick { background-position: -32px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-minus { background-position: -48px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-minusthick { background-position: -64px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-close { background-position: -80px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-closethick { background-position: -96px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-key { background-position: -112px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-lightbulb { background-position: -128px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-scissors { background-position: -144px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-clipboard { background-position: -160px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-copy { background-position: -176px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-contact { background-position: -192px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-image { background-position: -208px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-video { background-position: -224px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-script { background-position: -240px -128px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-alert { background-position: 0 -144px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-info { background-position: -16px -144px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-notice { background-position: -32px -144px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-help { background-position: -48px -144px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-check { background-position: -64px -144px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-bullet { background-position: -80px -144px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-radio-on { background-position: -96px -144px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-radio-off { background-position: -112px -144px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-pin-w { background-position: -128px -144px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-pin-s { background-position: -144px -144px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-play { background-position: 0 -160px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-pause { background-position: -16px -160px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-seek-next { background-position: -32px -160px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-seek-prev { background-position: -48px -160px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-seek-end { background-position: -64px -160px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-seek-first { background-position: -80px -160px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-stop { background-position: -96px -160px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-eject { background-position: -112px -160px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-volume-off { background-position: -128px -160px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-volume-on { background-position: -144px -160px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-power { background-position: 0 -176px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-signal-diag { background-position: -16px -176px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-signal { background-position: -32px -176px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-battery-0 { background-position: -48px -176px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-battery-1 { background-position: -64px -176px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-battery-2 { background-position: -80px -176px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-battery-3 { background-position: -96px -176px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-plus { background-position: 0 -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-minus { background-position: -16px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-close { background-position: -32px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-triangle-e { background-position: -48px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-triangle-s { background-position: -64px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-triangle-w { background-position: -80px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-triangle-n { background-position: -96px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-arrow-e { background-position: -112px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-arrow-s { background-position: -128px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-arrow-w { background-position: -144px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-arrow-n { background-position: -160px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-zoomin { background-position: -176px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-zoomout { background-position: -192px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circle-check { background-position: -208px -192px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circlesmall-plus { background-position: 0 -208px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circlesmall-minus { background-position: -16px -208px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-circlesmall-close { background-position: -32px -208px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-squaresmall-plus { background-position: -48px -208px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-squaresmall-minus { background-position: -64px -208px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-squaresmall-close { background-position: -80px -208px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-all,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-top,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-left,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-tl {
+    border-top-left-radius: 4px;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-all,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-top,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-right,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-tr {
+    border-top-right-radius: 4px;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-all,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-bottom,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-left,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-bl {
+    border-bottom-left-radius: 4px;
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-all,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-bottom,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-right,
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-corner-br {
+    border-bottom-right-radius: 4px;
+}
+
+/* Overlays
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-overlay {
+        background: #f7f7ba url("images/ui-bg_white-lines_85_f7f7ba_40x100.png") 50% 50% repeat;
+        opacity: .8;
+        filter: Alpha(Opacity=80); /* support: IE8
+}
+div.ccm-page main .jl_magic_tabs_hot_sneaks .ui-widget-shadow {
+        margin: 8px 0 0 8px;
+        padding: 10px;
+        background: #ba9217 url("images/ui-bg_flat_75_ba9217_40x100.png") 50% 50% repeat-x;
+        opacity: .2;
+        filter: Alpha(Opacity=20); /* support: IE8
+        border-radius: 5px;
+}
+*/
+
+
+/*
+MAGIC TABS
+
+Accordion styles
+
+The way jQuery.ui builds tabs leads to some issues doing this just in css, so
+the styling of the accordion markers is less than perfect
+*/
+
+/* Fill whole width*/
+
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li {
+    width:100%;
+    overflow:hidden;
+}
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li>a {
+    width:100%;
+}
+
+
+/* Cursor so to indicate click to collapse */
+div.ccm-page main .ui-tabs.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion a.ui-tabs-selected.ui-state-active:hover,
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li>a.ui-tabs-selected.ui-state-active {
+    cursor:pointer;
+}
+
+/* + to indicate expandable */
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li>a:after {
+    content: "+";
+    font-weight:900!important;
+    float: right;
+    text-decoration: none;
+    font-size:140%!important;
+    margin-right:25px;
+}
+/* - to indicate collapsible */
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li>a.ui-tabs-selected.ui-state-active:after {
+    content: "-";
+    font-weight:900!important;
+    float: right;
+    text-decoration: none;
+    font-size:140%!important;
+    margin-right:25px;
+}
+/* end */

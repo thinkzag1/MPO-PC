@@ -1,0 +1,6 @@
+body {
+  background: transparent url(../../../../../concrete/themes/elemental/images/background.png) repeat scroll;
+}
+div.ccm-page {
+  position: relative;
+}

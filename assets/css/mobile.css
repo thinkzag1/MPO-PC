@@ -1,0 +1,67 @@
+html {
+  overflow-x: hidden !important;
+}
+html body {
+  overflow-x: hidden !important;
+  margin: 0px;
+  padding: 0px;
+}
+html body .clmainbox {
+  margin: 0px;
+  padding: 0px;
+}
+html body .logo {
+  clear: both;
+  width: 100%;
+  marign: 0px;
+  padding: 0px;
+  padding-top: 10px !important;
+  text-align: center !important;
+}
+html body .logo a {
+  text-decoration: none;
+}
+html body .logo img {
+  width: 75%;
+}
+html body .logphone {
+  marign: 0px;
+  padding: 0px;
+  clear: both;
+  width: 100%;
+  text-align: center !important;
+}
+html body .BgsDark .FormDatatext {
+  clear: both;
+  width: 100%;
+  padding: 0px 12px;
+  text-align: center !important;
+}
+html body .BgsDark .FormDatatext h1 {
+  font-size: 3em !important;
+}
+html body .BgsDark .FormDatatext ul li {
+  text-align: justify !important;
+}
+html body .BgsDark #formright {
+  clear: both;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+html body .BgDDrk ul {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+html body .BgDDrk ul li {
+  padding: 2em;
+}
+html body .BgDDrk ul li img {
+  width: 100% !important;
+}
+html body .BgFoot p {
+  text-align: justify !important;
+}
+html body .BgFoot h2, html body .BgFoot p, html body .BgFoot .btns {
+  width: 100% !important;
+}

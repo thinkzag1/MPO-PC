@@ -1,0 +1,74 @@
+/*
+Magic Tabs by John Liddiard (aka JohntheFish)
+www.jlunderwater.co.uk
+This software is licensed under the terms described in the concrete5.org marketplace.
+Please find the add-on there for the latest license copy.
+
+Create a tabbed interface simply by inserting magic tabs blocks into the page
+*/
+
+.jl_magic_tabs_controls{
+    position:relative;
+}
+
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs>ul.jl_magic_tabs{
+    margin-top:5px;
+}
+
+/*
+The 5.7 core ui theme is
+https://github.com/jquery-ui-bootstrap/jquery-ui-bootstrap/blob/masterbs3/css/custom-theme/jquery-ui-1.10.3.theme.css
+This is unfortunately lacking in styling for an active tab with ui-state-active
+
+Note that the active styling is on the a, not the li that jQuery.UI normally adopts.
+*/
+
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs>ul.jl_magic_tabs>li>a.ui-state-active {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+
+
+/*
+Accordion styles
+
+The way jQuery.ui builds tabs leads to some issues doing this just in css, so
+the styling of the accordion markers is less than perfect
+*/
+
+/* Fill whole width*/
+
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li {
+    width:100%;
+    overflow:hidden;
+}
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li>a {
+    width:100%;
+}
+
+
+/* Cursor so to indicate click to collapse */
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li>a.ui-tabs-selected.ui-state-active {
+    cursor:pointer;
+}
+
+/* + to indicate expandable */
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li>a:after {
+    content: "+";
+    font-weight:900!important;
+    float: right;
+    text-decoration: none;
+    font-size:140%!important;
+    margin-right:25px;
+}
+/* - to indicate collapsible */
+.ui-tabs.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.jl_magic_tabs>li>a.ui-tabs-selected.ui-state-active:after {
+    content: "-";
+    font-weight:900!important;
+    float: right;
+    text-decoration: none;
+    font-size:140%!important;
+    margin-right:25px;
+}

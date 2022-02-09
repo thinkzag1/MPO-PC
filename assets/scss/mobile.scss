@@ -1,0 +1,76 @@
+html{
+    overflow-x: hidden !IMPORTANT;
+    body{
+        overflow-x: hidden !IMPORTANT;
+        margin: 0px;
+        padding: 0px;
+        .clmainbox{
+            margin: 0px;
+            padding: 0px;
+        }
+		.logo{
+            clear: both;
+            width: 100%;
+            marign:0px;
+            padding:0px;
+            padding-top: 10px !important;
+            text-align: center !important;
+            a{
+                text-decoration: none;
+            }
+            img{
+                width:75%;
+            }
+        }
+        .logphone{
+            marign:0px;
+            padding:0px;
+            clear: both;
+            width: 100%;
+            text-align: center !important;
+        }
+        .BgsDark{
+            .FormDatatext{
+                clear: both;
+                width: 100%;
+                padding: 0px 12px;
+                text-align: center !IMPORTANT;
+                h1{
+                    font-size: 3em !IMPORTANT;
+                }
+                ul{
+                    li{
+                        text-align: justify !important;
+                    }
+                }
+            }
+            #formright{
+                clear: both;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+        .BgDDrk{
+            ul {
+                display: grid;  
+                grid-template-columns: 1fr;
+                li{
+                    padding: 2em;
+                    img{
+                        width:100% !important; 
+                    }
+                }
+            }
+        }
+        .BgFoot{
+            p{
+                text-align: justify !important;
+            }
+            h2,p,.btns{
+                width:100% !important; 
+            }
+        }
+		
+    }
+}

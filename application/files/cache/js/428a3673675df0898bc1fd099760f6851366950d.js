@@ -1,0 +1,4 @@
+$(document).ready(function(){$('#ccm-list-cb-all').click(function(){$("input[type='checkbox']").prop('checked',this.checked);});$('body').on('click','a.show-hide',function(e){e.preventDefault();var ref=$(this).attr("href");var target=$(this).closest("div.well").find(ref);if(target.is(":visible")){$(this).find("i").attr("class","fa fa-chevron-down");target.stop(true,true).slideUp();}else{$(this).find("i").attr("class","fa fa-chevron-up");target.stop(true,true).slideDown();}
+return false});$('#tabset a').click(function(ev){var tab_to_show=$(this).attr('href');if(tab_to_show=='#scroll-down'){$('html, body').animate({scrollTop:$(document).height()},"slow");return;}
+$('#tabset li').removeClass('ccm-nav-active').find('a').each(function(ix,elem){var tab_to_hide=$(elem).attr('href');$(tab_to_hide).hide();});$(tab_to_show).show();$(this).parent('li').addClass('ccm-nav-active');return false;}).first().click();$('[data-toggle="popover"]').popover();});;
+

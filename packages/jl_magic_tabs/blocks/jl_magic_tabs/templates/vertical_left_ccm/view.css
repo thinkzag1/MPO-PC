@@ -1,0 +1,123 @@
+/*
+Magic Tabs by John Liddiard (aka JohntheFish)
+www.jlunderwater.co.uk
+This software is licensed under the terms described in the concrete5.org marketplace.
+Please find the add-on there for the latest license copy.
+
+Create a tabbed interface simply by inserting magic tabs blocks into the page
+
+The use of !important to force styling is dependant on the theme the tabs are used with. Some themes will not
+need it at all. Some themes will need it in more places. In this template, !important is also used to override
+tab styling inherited from ccm.app
+
+INTERNET EXPLORER
+.jl_magic_tabs_screen could be replaced with :not(.jl_magic_tabs_accordion) if it were not for IE8 and below.
+*/
+
+div.jl_magic_tabs_vertical_left_ccm.jl_magic_tabs_screen{
+    margin-right:5px;
+    float:left;
+
+    /* The width of the tabs. The tab body automatically takes up any remaining width */
+    width:120px;
+}
+
+.jl_magic_tabs_controls{
+    position:relative;
+}
+/*
+http://stackoverflow.com/questions/1260122/expand-div-to-take-remaining-width
+*/
+div.jl_magic_tabs_vertical_left_ccm_tab_body{
+    overflow:hidden;
+    padding-top:5px
+}
+
+.jl_magic_tabs_vertical_left_ccm.jl_magic_tabs_screen ul.jl_magic_tabs.nav-tabs.nav{
+    clear:both;
+    padding: 0;
+    list-style: none;
+    margin-right: 0px;
+    margin-bottom:5px;
+    margin-top:5px;
+    border-right: 1px solid #DDD!important;
+    border-bottom: none !important;
+}
+
+.jl_magic_tabs_vertical_left_ccm.jl_magic_tabs_screen ul.jl_magic_tabs.nav-tabs.nav li{
+    margin-top:0px;
+    margin-bottom: 3px;
+    margin-right: -1px;
+    float: none !important;
+}
+
+/* Basic tab */
+.jl_magic_tabs_vertical_left_ccm.jl_magic_tabs_screen ul.jl_magic_tabs.nav-tabs.nav li a{
+    text-align:right;
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-bottom: 3px;
+    margin-right: 0px;
+    border: 1px solid #DDD;
+    border-right-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Basic tab hover*/
+.jl_magic_tabs_vertical_left_ccm.jl_magic_tabs_screen ul.jl_magic_tabs.nav-tabs.nav li a:hover{
+    border-color: #EEE #DDD #EEE #EEE;
+    border-right-color: rgba(0, 0, 0, 0);
+
+}
+
+/* Active tab */
+.jl_magic_tabs_vertical_left_ccm.jl_magic_tabs_screen ul.jl_magic_tabs.nav-tabs.nav li.jl_magic_tabs_vertical_left_ccm.jl_magic_tabs_screen_active a.jl_magic_tabs_vertical_left_ccm.jl_magic_tabs_screen_active.ccm-nav-active.active{
+    border: 1px solid #DDD;
+    border-right-color: rgba(0, 0, 0, 0);
+}
+
+/* Active tab hover - mainly here to stop the hover from the basic tab pushiung through*/
+.jl_magic_tabs_vertical_left_ccm.jl_magic_tabs_screen ul.jl_magic_tabs.nav-tabs.nav li.jl_magic_tabs_vertical_left_ccm.jl_magic_tabs_screen_active a.jl_magic_tabs_vertical_left_ccm.jl_magic_tabs_screen_active.ccm-nav-active.active:hover{
+    border: 1px solid #DDD;
+    border-right-color: rgba(0, 0, 0, 0);
+
+    /* makes sure that the active tab does not react on hover */
+    cursor:default;
+}
+
+/*
+Accordion styles
+*/
+
+/* Fill whole width */
+.jl_magic_tabs_vertical_left_ccm.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li {
+    width:100%;
+}
+
+/* Cursor so to indicate click to collapse */
+.jl_magic_tabs_vertical_left_ccm.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li>a.active {
+    cursor:pointer;
+}
+
+/* + to indicate expandable */
+.jl_magic_tabs_vertical_left_ccm.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li>a:after {
+    content: "+";
+    font-weight:900;
+    float: right;
+    text-decoration: none;
+    font-size:140%;
+}
+/* - to indicate collapsible */
+.jl_magic_tabs_vertical_left_ccm.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li>a.active:after {
+    content: "-";
+}
+div.jl_magic_tabs_accordion.jl_magic_tabs_vertical_left_ccm_tab_body{
+    overflow:none;
+    padding-top:inherit;
+}
+

@@ -1,0 +1,461 @@
+O:40:"Concrete\Core\Cache\Page\PageCacheRecord":5:{s:7:"expires";i:1675940028;s:14:"cacheRecordKey";s:19:"contact%2FReview-us";s:7:"headers";a:3:{s:6:"Pragma";s:6:"public";s:13:"Cache-Control";s:34:"max-age=31536000,s-maxage=31536000";s:7:"Expires";s:29:"Thu, 09 Feb 2023 10:53:48 GMT";}s:3:"url";s:18:"https://mpopc.com/";s:7:"content";s:25967:"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/application/themes/mpo/css/bootstrap-modified.css">
+    <link href="/application/files/cache/css/mpo/main.css?ts=1632833640" rel="stylesheet" type="text/css" media="all">    <link href="/application/files/cache/css/mpo/custom.css?ts=1632747605" rel="stylesheet" type="text/css" media="all">    
+<title>Review-us | Midgett Preti Olansen</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="Please take a Minute and Review us. Your feedback is important for us."/>
+<meta name="robots" content="noindex"/>
+<meta name="generator" content="concrete5 - 8.2.1"/>
+<meta name="msapplication-TileImage" content="https://mpopc.com/application/files/7915/0834/2904/mpo-new-144x144.png"/>
+<meta name="msapplication-TileColor" content="rgb(255, 255, 255)"/>
+<link rel="shortcut icon" href="https://mpopc.com/application/files/3215/0834/2903/mpo-new-16x16.png" type="image/x-icon"/>
+<link rel="icon" href="https://mpopc.com/application/files/3215/0834/2903/mpo-new-16x16.png" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="https://mpopc.com/application/files/4415/0834/2902/mpo-new-57x57.png"/>
+<script type="text/javascript">
+    var CCM_DISPATCHER_FILENAME = "/index.php";
+    var CCM_CID = 402;
+    var CCM_EDIT_MODE = false;
+    var CCM_ARRANGE_MODE = false;
+    var CCM_IMAGE_PATH = "/concrete/images";
+    var CCM_TOOLS_PATH = "/index.php/tools/required";
+    var CCM_APPLICATION_URL = "https://mpopc.com";
+    var CCM_REL = "";
+</script>
+
+<link rel="stylesheet" href="/packages/whale_parallax_area/css/whale-parallax-area.css?v=54e23bfd861b6862bcb58c7d0e3f3342"/>
+<style type="text/css" data-area-style-area-handle="Main" data-block-style-block-id="2163" data-style-set="386">.ccm-custom-style-container.ccm-custom-style-main-2163{margin-top:20px}</style>
+<link href="/concrete/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="/concrete/js/jquery.js"></script>
+<!--[if lt IE 9]><script type="text/javascript" src="/concrete/js/ie/html5-shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/concrete/js/ie/respond.js"></script><![endif]-->
+<link href="/application/files/cache/css/b71bf1a194e5e70ab5564f325dc1062cca1233fc.css" rel="stylesheet" type="text/css" media="all" data-source="/concrete/blocks/autonav/templates/responsive_header_navigation/view.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNRGXKX');</script>
+<!-- End Google Tag Manager -->
+
+--------------
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GS49TL');</script>
+<!-- End Google Tag Manager -->
+
+<meta name="google-site-verification" content="85KfXeCQsLl581qpk91DopI0UlEPKZQ7RxksHFoOOp8" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Attorney",
+  "name": "Midgett Preti Olansen",
+  "image": "https://mpopc.com/application/files/thumbnails/large/2915/0818/2097/MPO_final.jpg",
+  "@id": "https://www.linkedin.com/company/midgett-&-preti-pc",
+  "url": "https://mpopc.com/",
+  "telephone": "(757)687-8888",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2901 S Lynnhaven Rd Ste 120",
+    "addressLocality": "Virginia Beach",
+    "addressRegion": "VA",
+    "postalCode": "23452",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.8321689,
+    "longitude": -76.0715013
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "08:30",
+    "closes": "17:00"
+  } 
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Merchant logo Midgett Preti Olansen",
+  "url": "https://mpopc.com/",
+  "logo": "https://mpopc.com/application/files/thumbnails/large/2915/0818/2097/MPO_final.jpg",
+  "sameAs": [
+    "https://www.facebook.com/MidgettPretiOlansen",
+    "https://www.linkedin.com/company/midgett-&-preti-pc"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mpopc.com/blog"
+  },
+  "headline": "Estate Planning Attorney Blog | Midgett Preti Olansen PC",
+  "description": "Read articles about corporate law, estate planning law, Probate law, etc., crafted by Midgett Preti Olansen, a top law firm in Virginia Beach.",
+  "image": "https://mpopc.com/application/files/thumbnails/large/2915/0818/2097/MPO_final.jpg",  
+  "author": {
+    "@type": "Organization",
+    "name": "Midgett Preti Olansen PC"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Midgett Preti Olansen PC",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mpopc.com/application/files/thumbnails/large/2915/0818/2097/MPO_final.jpg"
+    }
+  },
+  "datePublished": "2020-12-02",
+  "dateModified": "2020-12-02"
+}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Ads: 461860416 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-461860416"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-461860416');
+</script>    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style');
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
+            );
+            document.querySelector('head').appendChild(msViewportStyle);
+        }
+		$(document).ready(function(){
+$('.ccm-responsive-navigation ul ul li a').each(function(){  
+if($(this).attr('class')=='no-link'){ 
+    $(this).attr('class','')
+    
+}  
+}); 
+});
+    </script>
+    <!--<script src="https://use.typekit.net/fru2bfk.js"></script>-->
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNRGXKX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="ccm-page page-type-page page-template-full">
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-6 logo">
+                
+
+    <p><a href="https://mpopc.com"><picture><!--[if IE 9]><video style='display: none;'><![endif]--><source srcset="/application/files/thumbnails/large/2915/0818/2097/MPO_final.jpg" media="(min-width: 900px)"><source srcset="/application/files/thumbnails/medium/2915/0818/2097/MPO_final.jpg" media="(min-width: 768px)"><source srcset="/application/files/thumbnails/small/2915/0818/2097/MPO_final.jpg"><!--[if IE 9]></video><![endif]--><img src="/application/files/thumbnails/small/2915/0818/2097/MPO_final.jpg" alt="MPO logo"></picture></a></p>
+
+            </div>
+            <div class="col-sm-8 col-xs-6 site-nav">
+                
+
+    <style>
+    .btn--buy,.btn--pay,.btn--donate{background-color:#424e54;border:0;border-radius:8px;color:#fff;cursor:pointer;display:inline-block;font-family:Times New Roman, Times, serif;font-size:20px;line-height:1;margin-bottom:1em;padding:.75em 1em;vertical-align:middle;transition:background-color .4s ease;}
+    .btn--pay{background-color:#494949;border-color:#494949;}
+    .btn--pay:hover{background-color:#333;border-color:#333;}
+    .btn--buy{background-color:#3ea56b;border-color:#2e955b;}
+    .btn--buy:hover{background-color:#1e854b;text-decoration:none;}
+    .btn--donate{background-color: #4e75b9;border-color: #4e75b9;}
+    .btn--donate:hover{background-color:#3e65a9;border-color:#3e65a9;}
+    .cards{margin-top:1em;}
+    .cards img{border:1px solid #c5c6ce;border-radius:5px;}
+    .cards--s img{height:30px;}
+
+    .btn--pay {
+        background-color: #;
+        font-family: 'Lehigh','IE Lehigh',serif !important;
+        font-weight: 700;
+        font-size: ;
+        color: #;
+    }
+    .btn--pay:hover{
+        background-color: #;
+        color: #f68a33;
+    }
+</style>
+<script>
+$(document).ready(function(){
+$('.ccm-responsive-navigation ul ul li a').each(function(){  
+if($(this).attr('class')=='no-link'){ 
+    $(this).attr('class','')
+    
+}  
+}); 
+});
+    
+</script>
+<form action="https://mpopc2.securepayments.cardpointe.com/pay?" method="post" id="btnPayFrm"><input type="hidden" name="total" value="0.00"><button type="submit" class="btn btn--pay pull-right">E-PAY</button> </form> 
+
+
+
+    
+<nav class="ccm-responsive-navigation original"><ul><li class=""><a href="https://mpopc.com/about" target="_self" class="">About</a></li><li class=""><a href="https://mpopc.com/attorneys" target="_self" class="">Attorneys</a><ul><li class=""><a href="https://mpopc.com/attorneys/john-t-midgett" target="_self" class="">John T. Midgett</a></li><li class=""><a href="https://mpopc.com/attorneys/todd-j-preti" target="_self" class="">Todd J. Preti</a></li><li class=""><a href="https://mpopc.com/attorneys/nathan-r-olansen" target="_self" class="">Nathan R. Olansen</a></li><li class=""><a href="https://mpopc.com/attorneys/stephanie-C-Smith" target="_self" class="">Stephanie C. Smith</a></li><li class=""><a href="https://mpopc.com/attorneys/alison-r-zizzo" target="_self" class="">Alison R. Zizzo</a></li><li class=""><a href="https://mpopc.com/attorneys/ann-h-larkin" target="_self" class="">Ann H. Larkin</a></li><li class=""><a href="https://mpopc.com/attorneys/vanessa-macias-stillma" target="_self" class="">Vanessa Macias Stillman</a></li><li class=""><a href="https://mpopc.com/attorneys/payton-d-cromwell" target="_self" class="">Payton D. Cromwell</a></li><li class=""><a href="https://mpopc.com/attorneys/Wade-J-Skalsky" target="_self" class="">Wade J. Skalsky</a></li><li class=""><a href="https://mpopc.com/attorneys/ashley-e-nimitz" target="_self" class="">Ashley E. Nimitz</a></li></ul></li><li class=""><a href="https://mpopc.com/services" target="_self" class="">Services</a><ul><li class=""><a href="https://mpopc.com/services/estate-planning" target="_self" class="">Estate Planning</a></li><li class=""><a href="https://mpopc.com/services/estate-trust-administration" target="_self" class="">Estate and Trust Administration</a></li><li class=""><a href="https://mpopc.com/services/estate-trust-litigation" target="_self" class="">Estate and Trust Litigation</a></li><li class=""><a href="https://mpopc.com/services/general-litigation" target="_self" class="">General Litigation</a></li><li class=""><a href="https://mpopc.com/services/corporate-commercial-planning" target="_self" class="">Corporate and Commercial Planning</a></li><li class=""><a href="https://mpopc.com/services/taxation" target="_self" class="">Taxation</a></li><li class=""><a href="https://mpopc.com/services/elder-law" target="_self" class="">Elder Law</a></li></ul></li><li class="nav-path-selected"><a href="https://mpopc.com/contact" target="_self" class="nav-path-selected">Contact Us</a></li><li class=""><a href="https://mpopc.com/news" target="_self" class="">News</a><ul><li class=""><a href="https://mpopc.com/blog" target="_self" class="">Blog</a></li><li class=""><a href="https://mpopc.com/news/announcements" target="_self" class="">Announcements</a></li><li class=""><a href="https://mpopc.com/news/job-opportunities" target="_self" class="">Job Opportunities</a></li></ul></li></ul></nav><div class="ccm-responsive-menu-launch"><i></i></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main>
+	<div class="hero-image">
+		
+
+<div class="container"><div class="row"><div class="col-sm-12">    <picture><!--[if IE 9]><video style='display: none;'><![endif]--><source srcset="/application/files/thumbnails/large/4016/0795/5791/Reviewus.jpg" media="(min-width: 900px)"><source srcset="/application/files/thumbnails/medium/4016/0795/5791/Reviewus.jpg" media="(min-width: 768px)"><source srcset="/application/files/thumbnails/small/4016/0795/5791/Reviewus.jpg"><!--[if IE 9]></video><![endif]--><img src="/application/files/thumbnails/small/4016/0795/5791/Reviewus.jpg" alt="reviewus" class="ccm-image-block img-responsive bID-2681"></picture>
+</div></div></div>	</div>
+    
+
+<div class="container"><div class="row"><div class="col-sm-12">    <div class="row"><div class="col-sm-12">
+
+    <h1 style="text-align: center;">Please take a moment to share your experience with us.</h1>
+
+<p style="text-align: center; display:none;">Please take a moment to review your experience with us. Your feedback not only helps us, it helps other potential clients.</p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+
+
+    <div class="row"><div class="col-sm-6">
+
+        <div class="ccm-custom-style-container ccm-custom-style-main234235-2663 centeralign"
+            >
+    <picture><!--[if IE 9]><video style='display: none;'><![endif]--><source srcset="/application/files/thumbnails/large/5816/1039/3453/PositiveExperience.jpg" media="(min-width: 900px)"><source srcset="/application/files/thumbnails/medium/5816/1039/3453/PositiveExperience.jpg" media="(min-width: 768px)"><source srcset="/application/files/thumbnails/small/5816/1039/3453/PositiveExperience.jpg"><!--[if IE 9]></video><![endif]--><img src="/application/files/thumbnails/small/5816/1039/3453/PositiveExperience.jpg" alt="like" class="ccm-image-block img-responsive bID-2663"></picture>
+    </div>
+</div><div class="col-sm-6">
+
+        <div class="ccm-custom-style-container ccm-custom-style-main234236-2682 centeralign"
+            >
+    <picture><!--[if IE 9]><video style='display: none;'><![endif]--><source srcset="/application/files/thumbnails/large/8116/1039/3473/NegativeExperience.jpg" media="(min-width: 900px)"><source srcset="/application/files/thumbnails/medium/8116/1039/3473/NegativeExperience.jpg" media="(min-width: 768px)"><source srcset="/application/files/thumbnails/small/8116/1039/3473/NegativeExperience.jpg"><!--[if IE 9]></video><![endif]--><img src="/application/files/thumbnails/small/8116/1039/3473/NegativeExperience.jpg" alt="nmegativeexperience" class="ccm-image-block img-responsive bID-2682"></picture>
+    </div>
+</div></div>
+</div></div>
+</div></div></div></main>
+
+
+<footer id="footer-theme">
+            <!--<div class="main-footer-icons">
+					</div>-->
+       <div class="main-footer-icons">
+       		<div class="container">
+  
+ 
+					<div class="col-sm-2 footer-icon-one col-xs-offset-1">
+						<div
+class="ccm-custom-style-footericonone"
+>
+
+
+    <picture><!--[if IE 9]><video style='display: none;'><![endif]--><source srcset="/application/files/thumbnails/large/7916/1039/2143/attorneys.jpg" media="(min-width: 900px)"><source srcset="/application/files/thumbnails/medium/7916/1039/2143/attorneys.jpg" media="(min-width: 768px)"><source srcset="/application/files/thumbnails/small/7916/1039/2143/attorneys.jpg"><!--[if IE 9]></video><![endif]--><img src="/application/files/thumbnails/small/7916/1039/2143/attorneys.jpg" alt="Attorneys" class="ccm-image-block img-responsive bID-2659" title="ATTORNEYS"></picture>
+
+
+    <h2 style="text-align: center;"><a href="https://mpopc.com/attorneys">ATTORNEYS</a></h2>
+</div>					</div>
+					<div class="col-sm-2 footer-icon-two">
+						
+
+    <picture><!--[if IE 9]><video style='display: none;'><![endif]--><source srcset="/application/files/thumbnails/large/2015/0401/7836/services.jpg" media="(min-width: 900px)"><source srcset="/application/files/thumbnails/medium/2015/0401/7836/services.jpg" media="(min-width: 768px)"><source srcset="/application/files/thumbnails/small/2015/0401/7836/services.jpg"><!--[if IE 9]></video><![endif]--><img src="/application/files/thumbnails/small/2015/0401/7836/services.jpg" alt="Service " class="ccm-image-block img-responsive bID-2656"></picture>
+
+
+    <h2 style="text-align:center;"><a href="https://mpopc.com/services">SERVICES</a></h2>
+					</div>
+					<div class="col-sm-2 footer-icon-three">
+						
+
+    <picture><!--[if IE 9]><video style='display: none;'><![endif]--><source srcset="/application/files/thumbnails/large/3615/0401/7837/blog.jpg" media="(min-width: 900px)"><source srcset="/application/files/thumbnails/medium/3615/0401/7837/blog.jpg" media="(min-width: 768px)"><source srcset="/application/files/thumbnails/small/3615/0401/7837/blog.jpg"><!--[if IE 9]></video><![endif]--><img src="/application/files/thumbnails/small/3615/0401/7837/blog.jpg" alt="News" class="ccm-image-block img-responsive bID-2657"></picture>
+
+
+    <h2 style="text-align:center;"><a href="https://mpopc.com/news/announcements">News</a></h2>
+					</div>
+					<div class="col-sm-2 footer-icon-four">
+						
+
+    <picture><!--[if IE 9]><video style='display: none;'><![endif]--><source srcset="/application/files/thumbnails/large/3915/0401/7836/contact.jpg" media="(min-width: 900px)"><source srcset="/application/files/thumbnails/medium/3915/0401/7836/contact.jpg" media="(min-width: 768px)"><source srcset="/application/files/thumbnails/small/3915/0401/7836/contact.jpg"><!--[if IE 9]></video><![endif]--><img src="/application/files/thumbnails/small/3915/0401/7836/contact.jpg" alt="Contact us" class="ccm-image-block img-responsive bID-2660"></picture>
+
+
+    <h2 style="text-align:center;"><a href="https://mpopc.com/contact">CONTACT</a></h2>
+					</div>
+				    <div class="col-sm-2 footer-icon-five">
+						
+
+    <picture><!--[if IE 9]><video style='display: none;'><![endif]--><source srcset="/application/files/thumbnails/large/1216/1349/1498/contactus.jpg" media="(min-width: 900px)"><source srcset="/application/files/thumbnails/medium/1216/1349/1498/contactus.jpg" media="(min-width: 768px)"><source srcset="/application/files/thumbnails/small/1216/1349/1498/contactus.jpg"><!--[if IE 9]></video><![endif]--><img src="/application/files/thumbnails/small/1216/1349/1498/contactus.jpg" alt="mpopc reviews" class="ccm-image-block img-responsive bID-2658"></picture>
+
+
+    <h2 style="text-align:center;"><a href="https://mpopc.com/contact/review-us">REVIEW US</a></h2>
+					</div>
+
+		   </div>
+		</div>
+    
+        
+</footer>
+<footer id="footer-theme-two">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 footer-legal">
+				
+
+    <p style="text-align: center;">2901 S. Lynnhaven Road, Suite 120&nbsp; &bull;&nbsp; Virginia Beach, VA 23452&nbsp; &bull;&nbsp; <a href="tel:+17576878888">757.687.8888</a>&nbsp; &bull;&nbsp; 757.687.8732 Facsimile&nbsp; &bull;&nbsp; www.mpopc.com</p>
+
+
+
+        <div class="ccm-custom-style-container ccm-custom-style-main-2163"
+            >
+    <p style="text-align: justify;">The materials on this website were prepared by Midgett Preti Olansen PC. They are for informational purposes only. They are not intended to constitute, nor do they constitute, legal advice. Neither use of this website, nor an initial call or communication to an attorney is intended to create or creates an attorney-client relationship. The only way to become a Midgett Preti Olansen PC client is through mutual agreement. Do not act on any information on this website without first seeking professional advice.</p>
+
+    </div>
+			</div>
+		<div class="row">
+			<div class="col-sm-3 footer-search">
+				
+
+    
+<div id="ccm-block-social-links1711" class="ccm-block-social-links">
+    <ul class="list-inline">
+            <li><a target="_blank" href="https://www.linkedin.com/company/379671/"><span class="social-links">linkedin-square</span><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+</div>
+			</div>
+			<div class="col-sm-6 footer-legal-two">
+				
+
+    <p style="text-align: center;">&copy; 2022 Midgett&nbsp;Preti Olansen&nbsp; &bull;&nbsp; Site Powered By&nbsp;<a href="http://www.studiocenter.com/" target="_blank">Studio Center</a></p>
+
+			</div>
+			<div class="col-sm-3 footer-social">
+				
+
+    <form action="/search" method="get" class="custom-search">
+    <span class="fa fa-search"></span>
+    <input name="search_paths[]" type="hidden"/>
+    <input name="query" type="text" placeholder="Search..." aria-label="Search" value>
+</form>
+			</div>
+		</div>
+		</div>
+	</div>
+</footer>
+
+<!--<footer id="concrete5-brand">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Built with <a href="http://www.concrete5.org" class="concrete5" rel="nofollow">concrete5</a> CMS.</span>
+                <span class="pull-right">
+                    <a href="https://mpopc.com/login">Log in</a>                </span>
+                <span id="ccm-account-menu-container"></span>
+            </div>
+        </div>
+    </div>
+</footer>-->
+<style>
+	input.wpcf7-form-control.wpcf7-submit{ background:#35627b; color:#fff;}
+	.centeralign img{width:100%;     cursor: pointer;}
+	#footer-theme{margin-top: 3em;} 
+	.main-footer-icons,.hero-image{display:none;}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<script src="https://parsleyjs.org/dist/parsley.min.js"></script>
+<style>.bID-2380,.bID-2382{width:100%;} #myModal1 .modal-dialog{ width: 24em;} #myModal2 input,#myModal2 textarea,#myModal2 label{ width:100%;}#myModal2 textarea{max-height: 4em;}</style>
+<script>
+	$(document).on('click','.bID-2407',function(){  $('#myModal1').modal('show'); });
+    $(document).on('click','.bID-2406',function(){  $('#myModal2').modal('show'); });
+	$('#myModal2 form').parsley();
+</script>
+<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+			<center><h3>Thank you! We need your help. Would you share your experience on one of these sites?</h3>
+			<a target="_new" href="https://www.google.com/search?q=midgett+preti+olansen+virginia+beach&oq=midgett&aqs=chrome.2.69i57j35i39l2j0i457j46i175i199j69i61j69i60j69i61.6961j0j7&sourceid=chrome&ie=UTF-8#lrd=0x89baeabb0d0882f7:0x8f485d85bada5c67,3,,,"><img src="https://mpopc.com/application/files/3616/1349/2054/google1-250x100.png" alt="google"></a><br><br>
+			<a target="_new" href="https://www.lawyers.com/clientrating/fillSurvey?firmId=1754449"><img src="https://mpopc.com/application/files/9416/1349/1837/badges_lawyers_com1.png" style="width:16em;" alt="badges_lawyer"></a><br><br>
+			<a target="_new" href="https://www.yelp.com/writeareview/biz/SOZqH7y4G9l6m-eP9UVp8A?return_url=%2Fbiz%2FSOZqH7y4G9l6m-eP9UVp8A&source=biz_details_war_button"><img src="https://mpopc.com/application/files/3216/1349/2055/yep-review-218x140.png" alt="yep-review"></a></center>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+			<center><h3>We strive for 100% customer satisfaction. If we fell short, please tell us more so we can address your concerns.</h3></center>
+          <form action="/contact/review-us?h=2044971867" method="post" class="wpcf7-form init" >
+	<input type="hidden" name="formsd" value="1">
+<p><label> Your Name (required)<br>
+    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name"  size="40" class="wpcf7-form-control" required></span> </label></p>
+<p><label> Your Email (required)<br>
+    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"  size="40" class="wpcf7-form-control" required></span> </label></p>
+<p><label> Your Number (required)<br>
+<span class="wpcf7-form-control-wrap tel-584"><input type="tel" name="Phone_number"  size="40" class="wpcf7-form-control"  required></span> </label></p>
+<p><label> Your Message<br>
+    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control" ></textarea></span> </label></p>
+
+<p><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit"></p>
+</form>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+Array
+(
+)
+
+
+
+
+</div>
+
+<script type="text/javascript" src="/packages/whale_parallax_area/js/jquery.paroller.min.js?v=54e23bfd861b6862bcb58c7d0e3f3342"></script>
+<script type="text/javascript" src="/application/files/cache/js/b160c189a334d2bbf01aa86972514d344dfb31c0.js" data-source="/concrete/js/picturefill.js /concrete/blocks/autonav/templates/responsive_header_navigation/view.js"></script>
+<script src="/application/themes/mpo/js/custom.js"></script>
+
+</body>
+</html>
+";}

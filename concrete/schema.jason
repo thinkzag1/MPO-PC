@@ -1,0 +1,37 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Attorney",
+  "name": "Midgett Preti Olansen",
+  "image": "https://mpopc.com/application/files/thumbnails/large/2915/0818/2097/MPO_final.jpg",
+  "@id": "https://www.linkedin.com/company/midgett-&-preti-pc",
+  "url": "https://mpopc.com/",
+  "telephone": "(757)687-8888",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2901 S Lynnhaven Rd Ste 120",
+    "addressLocality": "Virginia Beach",
+    "addressRegion": "VA",
+    "postalCode": "23452",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.8321689,
+    "longitude": -76.0715013
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "08:30",
+    "closes": "17:00"
+  } 
+}
+</script>

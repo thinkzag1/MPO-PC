@@ -1,0 +1,221 @@
+/*
+Magic Tabs by John Liddiard (aka JohntheFish)
+www.jlunderwater.co.uk
+This software is licensed under the terms described in the concrete5.org marketplace.
+Please find the add-on there for the latest license copy.
+
+Create a tabbed interface simply by inserting magic tabs blocks into the page
+*/
+
+.jl_magic_tabs_continued_rainbow ul.jl_magic_tabs li a:hover,
+.jl_magic_tabs_continued_rainbow ul.jl_magic_tabs li a:focus{
+    border-style:inset inset none inset;
+    border-bottom-color:rgba(0, 0, 0, 0) !important;
+    border-bottom:none !important;
+    text-decoration:none !important;
+}
+
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_continued_rainbow_active a.jl_magic_tabs_continued_rainbow_active{
+    border-style:inset inset none inset;
+    border-bottom-color:rgba(0, 0, 0, 0);
+    background-color:transparent;
+}
+
+.jl_magic_tabs_controls{
+    position:relative;
+}
+
+/* overall tab outset style */
+.jl_magic_tabs_continued_rainbow ul.jl_magic_tabs li a{
+    border-style:outset outset none outset;
+    border-bottom-color:transparent;
+
+}
+
+.jl_magic_tabs_continued_rainbow ul li{
+    list-style-type:none;
+    margin-top:3px;
+}
+
+
+
+
+/* colours repeated through rainbow */
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_1 a{
+    background-color:red;
+    border-color:red;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_2 a{
+    background-color:orange;
+    border-color:orange;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_3 a{
+    background-color:yellow;
+    border-color:yellow;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_4 a{
+    background-color:green;
+    border-color:green;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_5 a{
+    background-color:blue;
+    border-color:blue;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_6 a{
+    background-color:indigo;
+    border-color:indigo;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_7 a{
+    background-color:violet;
+    border-color:violet;
+}
+
+
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_8 a{
+    background-color:red;
+    border-color:red;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_9 a{
+    background-color:orange;
+    border-color:orange;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_10 a{
+    background-color:yellow;
+    border-color:yellow;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_11 a{
+    background-color:green;
+    border-color:green;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_12 a{
+    background-color:blue;
+    border-color:blue;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_13 a{
+    background-color:indigo;
+    border-color:indigo;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_14 a{
+    background-color:violet;
+    border-color:violet;
+}
+
+
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_15 a{
+    background-color:red;
+    border-color:red;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_16 a{
+    background-color:orange;
+    border-color:orange;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_17 a{
+    background-color:yellow;
+    border-color:yellow;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_18 a{
+    background-color:green;
+    border-color:green;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_19 a{
+    background-color:blue;
+    border-color:blue;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_20 a{
+    background-color:indigo;
+    border-color:indigo;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_21 a{
+    background-color:violet;
+    border-color:violet;
+}
+
+
+
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_22 a{
+    background-color:red;
+    border-color:red;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_23 a{
+    background-color:orange;
+    border-color:orange;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_24 a{
+    background-color:yellow;
+    border-color:yellow;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_25 a{
+    background-color:green;
+    border-color:green;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_26 a{
+    background-color:blue;
+    border-color:blue;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_27 a{
+    background-color:indigo;
+    border-color:indigo;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_28 a{
+    background-color:violet;
+    border-color:violet;
+}
+
+
+
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_29 a{
+    background-color:red;
+    border-color:red;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_30 a{
+    background-color:orange;
+    border-color:orange;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_31 a{
+    background-color:yellow;
+    border-color:yellow;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_32 a{
+    background-color:green;
+    border-color:green;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_33 a{
+    background-color:blue;
+    border-color:blue;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_34 a{
+    background-color:indigo;
+    border-color:indigo;
+}
+.jl_magic_tabs_continued_rainbow li.jl_magic_tabs_gix_35 a{
+    background-color:violet;
+    border-color:violet;
+}
+
+/*
+Accordion styles
+*/
+
+/* Fill whole width */
+.jl_magic_tabs_continued_rainbow.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li {
+    width:100%;
+}
+
+/* Cursor so to indicate click to collapse */
+.jl_magic_tabs_continued_rainbow.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li>a.active.jl_magic_tabs_continued_rainbow_active {
+    cursor:pointer;
+}
+
+/* + to indicate expandable */
+.jl_magic_tabs_continued_rainbow.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li>a:after {
+    content: "+";
+    font-weight:900;
+    float: right;
+    text-decoration: none;
+    font-size:140%;
+}
+/* - to indicate collapsible */
+.jl_magic_tabs_continued_rainbow.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li>a.active.jl_magic_tabs_continued_rainbow_active:after {
+    content: "-";
+}
+

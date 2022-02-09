@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btJlMagicTabs">
+        <field name="bID" type="I">
+            <key />
+            <unsigned />
+        </field>
+        <field name="heading" type="X"></field>
+        <field name="tip" type="X"></field>
+        <field name="level" type="I">
+            <unsigned/>
+        </field>
+        <field name="tab_continuity" type="I">
+            <unsigned/>
+        </field>
+        <field name="tab_history" type="I">
+            <unsigned/>
+        </field>
+        <field name="responsive_threshold" type="I">
+            <unsigned/>
+        </field>
+
+        <!-- Transition settings -->
+        <field name="transition_speed" type="I">
+            <unsigned />
+            <default value="0"/>
+        </field>
+        <field name="transition_type" type="C" size="20"></field>
+        <field name="transition_easing" type="C" size="20"></field>
+        <field name="transition_direction" type="C" size="6"></field>
+        <field name="transition_adaptive_dir" type="C" size='1'>
+            <default value="N"/>
+        </field>
+
+
+    </table>
+</schema>

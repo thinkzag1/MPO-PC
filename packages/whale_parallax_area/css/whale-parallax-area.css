@@ -1,0 +1,24 @@
+.'wpa-0' {
+  background-color: '#ffffff';
+  background-repeat: 'no-repeat' !important;
+  background-size: 'auto' !important;
+  background-image: url("");
+  background-position-x: 49%;
+  background-position-y: 49%;
+}
+@media (min-width: 768px) {
+  .'wpa-0' {
+    padding-top: 0px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .'wpa-0' {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+}

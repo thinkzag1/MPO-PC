@@ -1,0 +1,300 @@
+	
+@font-face {
+    font-family: 'Lehigh';
+    src: url('../fonts/Lehigh.woff') format('woff'), url('../fonts/Lehigh.woff2') format('woff2'), url('../fonts/Lehigh.tff') format('truetype'), url('../fonts/Lehigh.svg') format('svg');
+    src: url('../fonts/Lehigh.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: 'IE Lehigh';
+    src: url('../fonts/Lehigh.eot');
+    font-weight: normal;
+    font-style: normal
+}
+
+html{
+    scroll-behavior: smooth;
+    body{
+        scroll-behavior: smooth;
+        .hid{
+            display: none;
+        }
+        margin: 0px;
+        padding: 0px;
+        .logo{
+            img{
+                width: 100%;
+            }
+        }
+        .logphone{
+            text-align: right;
+            h3{
+                color: #35627b;
+                font-size: 3em;
+                font-weight: bolder; 
+                font-family: 'Lehigh';
+                a{
+                    color: #35627b;
+                    text-decoration: none !Important;
+                }
+            }
+
+        }
+        .yellowtxt{
+            background: rgb(246, 138, 51);
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.3em;
+            padding: 0.5em 0;
+            margin: 0.4em 0 0;
+        }
+        .BgsDark{
+            background: url(../img/bgs.png);
+            min-height: 34em;
+            background-size: cover;
+            .container{
+
+                padding: 0px;
+            }
+            .rightside{
+                padding-right: 0px;
+            }
+            .FormDatatext{
+                padding: 2.5em 14px 0 0;
+                color: #fff;
+                h1{    
+                    font-family: sans-serif;
+                    text-transform: capitalize;
+                    font-size: 2.5em;
+                    line-height: 1.3em;
+                    hr{
+                        border-top: 1px solid  rgb(246, 138, 51);
+                    }
+                }
+                p{    font-size: 1.2em;}
+                ul{
+                    li{
+                        list-style: none;
+                        font-size: 1.3em;
+                        line-height: 1.7em;
+                        position: relative;
+                        padding-left: 0.6em;
+                        text-align: justify !important;  
+                        &:before{
+                            position: absolute;
+                            content: '&';
+                            background: url(../img/chk.png);
+                            left: -22px;
+                            width: 20px;
+                            height: 20px;
+                            background-size: cover;
+                            color: transparent;
+                            top: 6px;
+                        }
+                    }
+                }
+            }
+            .FormDataShow{
+                background: rgb(255 255 255 / 70%);
+                padding: 4.5em 1.5em;
+                h2{
+                    margin: 0px;
+                    padding: 0px;
+                    text-transform: uppercase;
+                    font-size: 1.5em;
+                    text-align: center;
+                    font-weight: bold;
+                    hr{
+                        border-top: 1px solid #ffd400;
+                        margin: 6px 0px;
+                    }
+                }
+                p{
+                    text-align: center;
+                    font-size: 1.2em;
+                }
+                section{
+                    label{
+                        display: block !important;
+                        width: 100% !important;
+                        input,textarea{
+                            width: 100% !important;
+                            border: 0px;
+                            font-weight: 100;
+                            padding: 0.6em 6px;
+                            outline: none;
+                        } 
+                        textarea{
+                            min-height: 6em;
+                        }
+
+                    }
+                    .btns{
+                        background: rgb(246, 138, 51);
+                        color: #fff;
+                        text-align: center;
+                        width: 100%;
+                        border: 0px;
+                        text-transform: uppercase;
+                        padding: 12px 0;
+                        border-radius: 2em;
+                        box-shadow: 0 0 2px #000;
+                        font-weight: 600;
+                        margin-top: 1em;
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .BgDDrk{
+            background: url(../img/awards-background.jpg);
+            padding: 2em 0;
+            background-size: cover !IMPORTANT;
+            .container{
+
+                padding: 0px;
+            }
+            ul{
+                display: grid;
+                color: #fff;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 0px;
+                padding: 0px;
+
+                grid-gap: 2em;
+                li{
+                    list-style: none;
+                    border: 0px solid #fff;
+                    padding: 0em;
+                    text-align: center;
+                    
+                    div{
+                        font-size: 3em;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .BgFoot{
+            background: url(../img/bgsf.png);
+            padding: 4.5em 0;
+            background-size: cover !important;
+            h2{
+                text-align: center;
+                /* padding: 0 9em; */
+                width: 18em;
+                margin: 0 auto;
+                font-weight: 700;
+                font-size: 2.1em;
+                font-family: 'Circular-Loom';
+            }
+            p{
+                width: 50em;
+                margin: 0 auto;
+                padding-top: 3.5em;
+                text-align: justify;
+                font-size: 1.2em;
+
+            }
+            
+            .textboxdata{
+                ul{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    grid-gap: 7px;
+                    li{
+                        list-style: none;
+                        font-size: 1.3em;
+                        line-height: 1.7em;
+                        position: relative;
+                        padding-left: 1.9em;
+                        padding-top: 2px;
+                        background: #fff;
+                        border: 2px solid;
+                        &:before{
+                            position: absolute;
+                            content: '&';
+                            background: url(../img/chk.png);
+                            left: 6px;
+                            width: 20px;
+                            height: 20px;
+                            background-size: cover;
+                            color: transparent;
+                            top: 6px;
+                        }
+                    }
+                }
+            }
+            .btns {
+                background: rgb(246, 138, 51);
+                color: #fff;
+                text-align: center;
+                width: 28%;
+                border: 0px;
+                text-transform: uppercase;
+                padding: 12px 0;
+                border-radius: 2em;
+                box-shadow: 0 0 2px #000;
+                font-weight: 600;
+                margin-top: 1em;
+                outline: none;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+        footer{
+            font-family: 'Lehigh','IE Lehigh',serif !important;
+            &#footer-theme-two {
+                background-color: #b3b3b3;
+                padding-bottom: 10px;
+            }
+            .footer-legal {
+                color: #fff;
+                padding: 15px 15px;
+            }
+            p{
+                font-size: 18px;
+                font-family: 'Lehigh','IE Lehigh',serif !important;
+                text-align: center;
+                color: #fff !important;
+            }
+            .ccm-custom-style-container.ccm-custom-style-main-2163 {
+                margin-top: 20px;
+            }
+            a{
+                font-family: 'Lehigh','IE Lehigh',serif !important;
+                color: #fff !important;
+            }
+            i.fa{
+                font-size: 2em;
+            }
+            .custom-search {
+                position: relative;
+                color: #666666;
+                font-size: 16px;
+                float: right;
+                padding-right: 15px;
+                input {
+                    text-indent: 32px;
+                    font-family: "Lehigh",serif !important;
+                    width: 100%;
+                    height: 32px;
+                    background: #fcfcfc;
+                    border: 1px solid #aaa;
+                    border-radius: 5px;
+                    box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+                }
+                .fa-search {
+                    position: absolute;
+                    top: 8px;
+                    left: 10px;
+                    color: rgb(246, 138, 51);   
+                }
+            }
+        }
+    }
+}

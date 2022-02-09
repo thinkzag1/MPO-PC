@@ -1,0 +1,988 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <shahroq@yahoo.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Shahroq <shm@yahoo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Whale OWL Carousel"
+msgstr ""
+
+msgid "OWL Carousel"
+msgstr ""
+
+msgid "Please select a carousel."
+msgstr ""
+
+msgid "[ Select a Carousel ] "
+msgstr ""
+
+msgid "carouselID"
+msgstr ""
+
+msgid "You must select a carousel."
+msgstr ""
+
+msgid "Select a Carousel"
+msgstr ""
+
+msgid "Whale Owl Carousel"
+msgstr ""
+
+msgid "whale_owl_carousel.permission"
+msgstr ""
+
+msgid "OWL"
+msgstr ""
+
+msgid "Owl"
+msgstr ""
+
+msgid "Bellow Image"
+msgstr ""
+
+msgid "Top Left"
+msgstr ""
+
+msgid "Top Center"
+msgstr ""
+
+msgid "Top Right"
+msgstr ""
+
+msgid "Middle Left"
+msgstr ""
+
+msgid "Middle Center"
+msgstr ""
+
+msgid "Middle Right"
+msgstr ""
+
+msgid "Bottom Left"
+msgstr ""
+
+msgid "Bottom Center"
+msgstr ""
+
+msgid "Bottom Right"
+msgstr ""
+
+msgid "Center"
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "[ None ]"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "flash"
+msgstr ""
+
+msgid "pulse"
+msgstr ""
+
+msgid "rubberBand"
+msgstr ""
+
+msgid "shake"
+msgstr ""
+
+msgid "swing"
+msgstr ""
+
+msgid "tada"
+msgstr ""
+
+msgid "wobble"
+msgstr ""
+
+msgid "jello"
+msgstr ""
+
+msgid "bounceIn"
+msgstr ""
+
+msgid "bounceInDown"
+msgstr ""
+
+msgid "bounceInLeft"
+msgstr ""
+
+msgid "bounceInRight"
+msgstr ""
+
+msgid "bounceInUp"
+msgstr ""
+
+msgid "bounceOut"
+msgstr ""
+
+msgid "bounceOutDown"
+msgstr ""
+
+msgid "bounceOutLeft"
+msgstr ""
+
+msgid "bounceOutRight"
+msgstr ""
+
+msgid "bounceOutUp"
+msgstr ""
+
+msgid "fadeIn"
+msgstr ""
+
+msgid "fadeInDown"
+msgstr ""
+
+msgid "fadeInDownBig"
+msgstr ""
+
+msgid "fadeInLeft"
+msgstr ""
+
+msgid "fadeInLeftBig"
+msgstr ""
+
+msgid "fadeInRight"
+msgstr ""
+
+msgid "fadeInRightBig"
+msgstr ""
+
+msgid "fadeInUp"
+msgstr ""
+
+msgid "fadeInUpBig"
+msgstr ""
+
+msgid "fadeOut"
+msgstr ""
+
+msgid "fadeOutDown"
+msgstr ""
+
+msgid "fadeOutDownBig"
+msgstr ""
+
+msgid "fadeOutLeft"
+msgstr ""
+
+msgid "fadeOutLeftBig"
+msgstr ""
+
+msgid "fadeOutRight"
+msgstr ""
+
+msgid "fadeOutRightBig"
+msgstr ""
+
+msgid "fadeOutUp"
+msgstr ""
+
+msgid "fadeOutUpBig"
+msgstr ""
+
+msgid "flip"
+msgstr ""
+
+msgid "flipInX"
+msgstr ""
+
+msgid "flipInY"
+msgstr ""
+
+msgid "flipOutX"
+msgstr ""
+
+msgid "flipOutY"
+msgstr ""
+
+msgid "lightSpeedIn"
+msgstr ""
+
+msgid "lightSpeedOut"
+msgstr ""
+
+msgid "rotateIn"
+msgstr ""
+
+msgid "rotateInDownLeft"
+msgstr ""
+
+msgid "rotateInDownRight"
+msgstr ""
+
+msgid "rotateInUpLeft"
+msgstr ""
+
+msgid "rotateInUpRight"
+msgstr ""
+
+msgid "rotateOut"
+msgstr ""
+
+msgid "rotateOutDownLeft"
+msgstr ""
+
+msgid "rotateOutDownRight"
+msgstr ""
+
+msgid "rotateOutUpLeft"
+msgstr ""
+
+msgid "rotateOutUpRight"
+msgstr ""
+
+msgid "slideInUp"
+msgstr ""
+
+msgid "slideInDown"
+msgstr ""
+
+msgid "slideInLeft"
+msgstr ""
+
+msgid "slideInRight"
+msgstr ""
+
+msgid "slideOutUp"
+msgstr ""
+
+msgid "slideOutDown"
+msgstr ""
+
+msgid "slideOutLeft"
+msgstr ""
+
+msgid "slideOutRight"
+msgstr ""
+
+msgid "zoomIn"
+msgstr ""
+
+msgid "zoomInDown"
+msgstr ""
+
+msgid "zoomInLeft"
+msgstr ""
+
+msgid "zoomInRight"
+msgstr ""
+
+msgid "zoomInUp"
+msgstr ""
+
+msgid "zoomOut"
+msgstr ""
+
+msgid "zoomOutDown"
+msgstr ""
+
+msgid "zoomOutLeft"
+msgstr ""
+
+msgid "zoomOutRight"
+msgstr ""
+
+msgid "zoomOutUp"
+msgstr ""
+
+msgid "hinge"
+msgstr ""
+
+msgid "rollIn"
+msgstr ""
+
+msgid "rollOut"
+msgstr ""
+
+msgid "External"
+msgstr ""
+
+msgid "Internal"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Fade"
+msgstr ""
+
+msgid "Back Slide"
+msgstr ""
+
+msgid "Go Down"
+msgstr ""
+
+msgid "Fade Up"
+msgstr ""
+
+msgid "Fade Scale"
+msgstr ""
+
+msgid "Slide Left"
+msgstr ""
+
+msgid "Slide Right"
+msgstr ""
+
+msgid "Slide Up"
+msgstr ""
+
+msgid "Slide Down"
+msgstr ""
+
+msgid "Fall"
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "C"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
+
+msgid "Rounded"
+msgstr ""
+
+msgid "Circle"
+msgstr ""
+
+msgid "Thumbnail 1"
+msgstr ""
+
+msgid "Bold"
+msgstr ""
+
+msgid "Italic"
+msgstr ""
+
+msgid "Font"
+msgstr ""
+
+msgid "Box"
+msgstr ""
+
+msgid "Description Bubble"
+msgstr ""
+
+msgid "Description Bubble Bordered"
+msgstr ""
+
+msgid "Open Sans"
+msgstr ""
+
+msgid "Raleway"
+msgstr ""
+
+msgid "Baskerville"
+msgstr ""
+
+msgid "Roboto"
+msgstr ""
+
+msgid "Deleting a carousel will remove all block instances using that carousel on all pages, are you sure?"
+msgstr ""
+
+msgid "id"
+msgstr ""
+
+msgid "ccm-update"
+msgstr ""
+
+msgid "Carousel Name is not valid."
+msgstr ""
+
+msgid "Select a Theme."
+msgstr ""
+
+msgid "Select a Lightbox Effect."
+msgstr ""
+
+msgid "Select a Lightbox Theme."
+msgstr ""
+
+msgid "Record updated. You should clear the cache, if it is enabled."
+msgstr ""
+
+msgid "Record added."
+msgstr ""
+
+msgid "/dashboard/files/whale_owl_carousel/"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Duplicate"
+msgstr ""
+
+msgid "No records selected."
+msgstr ""
+
+msgid "core/file-manager"
+msgstr ""
+
+msgid "core/sitemap"
+msgstr ""
+
+msgid "redactor"
+msgstr ""
+
+msgid "Add Carousel"
+msgstr ""
+
+msgid "Update Carousel"
+msgstr ""
+
+msgid "Update Carousel & Stay"
+msgstr ""
+
+msgid "whale_owl_carousel.notice_form"
+msgstr ""
+
+msgid "Carousel"
+msgstr ""
+
+msgid "Slides"
+msgstr ""
+
+msgid "Lightbox"
+msgstr ""
+
+msgid "Carousel Options"
+msgstr ""
+
+msgid "Click to Show/Hide"
+msgstr ""
+
+msgid "Carousel Name"
+msgstr ""
+
+msgid "Plugin"
+msgstr ""
+
+msgid "Theme"
+msgstr ""
+
+msgid "Show Title"
+msgstr ""
+
+msgid "Display Title at carousel."
+msgstr ""
+
+msgid "Show Description"
+msgstr ""
+
+msgid "Display Description at carousel."
+msgstr ""
+
+msgid "Show Extra Text"
+msgstr ""
+
+msgid "Display Extra Text at carousel."
+msgstr ""
+
+msgid "Single Item"
+msgstr ""
+
+msgid "Display only one item."
+msgstr ""
+
+msgid "Check this for creating SLIDERS."
+msgstr ""
+
+msgid "Full-Screen"
+msgstr ""
+
+msgid "Background Position"
+msgstr ""
+
+msgid "Display slider on full-screen mode."
+msgstr ""
+
+msgid "Note that this option only available for Single Item mode. Also lightbox effect is not available in full-screen mode."
+msgstr ""
+
+msgid "%"
+msgstr ""
+
+msgid "Responsive Caption"
+msgstr ""
+
+msgid "Scale slider caption with window size"
+msgstr ""
+
+msgid "Items"
+msgstr ""
+
+msgid "This variable allows you to set the maximum amount of items displayed at a time with the widest browser width"
+msgstr ""
+
+msgid "Items Desktop"
+msgstr ""
+
+msgid "Items Desktop Small"
+msgstr ""
+
+msgid "As above."
+msgstr ""
+
+msgid "Items Tablet"
+msgstr ""
+
+msgid "Items Tablet Small"
+msgstr ""
+
+msgid "As above. Default value is disabled."
+msgstr ""
+
+msgid "Items Mobile"
+msgstr ""
+
+msgid "Auto Play"
+msgstr ""
+
+msgid "Change to any integer for example autoPlay : 5000 to play every 5 seconds."
+msgstr ""
+
+msgid "ms"
+msgstr ""
+
+msgid "Stop On Hover"
+msgstr ""
+
+msgid "Stop autoplay on mouse hover"
+msgstr ""
+
+msgid "Navigation"
+msgstr ""
+
+msgid "Display \"next\" and \"prev\" buttons."
+msgstr ""
+
+msgid "Navigation Text"
+msgstr ""
+
+msgid "You can customize your own text for navigation."
+msgstr ""
+
+msgid "Rewind Nav"
+msgstr ""
+
+msgid "Slide to first item. Use rewindSpeed to change animation speed."
+msgstr ""
+
+msgid "Scroll Per Page"
+msgstr ""
+
+msgid "Scroll per page not per item. This affect next/prev buttons and mouse/touch dragging."
+msgstr ""
+
+msgid "Pagination"
+msgstr ""
+
+msgid "Position"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Show pagination."
+msgstr ""
+
+msgid "Use negative number for place pagination inside the slider."
+msgstr ""
+
+msgid "Use size to scale pagination dots."
+msgstr ""
+
+msgid "px"
+msgstr ""
+
+msgid "Pagination Numbers"
+msgstr ""
+
+msgid "Show numbers inside pagination buttons"
+msgstr ""
+
+msgid "Random"
+msgstr ""
+
+msgid "Randomize slides"
+msgstr ""
+
+msgid "Carousel Advanced Options"
+msgstr ""
+
+msgid "Items Scale Up"
+msgstr ""
+
+msgid "Option to not stretch items when it is less than the supplied items."
+msgstr ""
+
+msgid "Slide Speed"
+msgstr ""
+
+msgid "Slide speed in milliseconds"
+msgstr ""
+
+msgid "Pagination Speed"
+msgstr ""
+
+msgid "Pagination speed in milliseconds"
+msgstr ""
+
+msgid "Rewind Speed"
+msgstr ""
+
+msgid "Rewind speed in milliseconds"
+msgstr ""
+
+msgid "Responsive"
+msgstr ""
+
+msgid "You can use Owl Carousel on desktop-only websites too! Just change that to \"false\" to disable resposive capabilities"
+msgstr ""
+
+msgid "Responsive Refresh Rate"
+msgstr ""
+
+msgid "Check window width changes every 200ms for responsive actions"
+msgstr ""
+
+msgid "Lazy Load"
+msgstr ""
+
+msgid "Lazy Follow"
+msgstr ""
+
+msgid "When pagination used, it skips loading the images from pages that got skipped. It only loads the images that get displayed in viewport. If set to false, all images get loaded when pagination used. It is a sub setting of the lazy load function."
+msgstr ""
+
+msgid "Auto Height"
+msgstr ""
+
+msgid "Add height to owl-wrapper-outer so you can use different heights on slides. Use it only for one item per page setting."
+msgstr ""
+
+msgid "Drag Before Anim Finish"
+msgstr ""
+
+msgid "Mouse Drag"
+msgstr ""
+
+msgid "Turn off/on mouse events."
+msgstr ""
+
+msgid "Touch Drag"
+msgstr ""
+
+msgid "Turn off/on touch events."
+msgstr ""
+
+msgid "Transition Style"
+msgstr ""
+
+msgid "Add CSS3 transition style. Works only with one item on screen."
+msgstr ""
+
+msgid "Carousel Design"
+msgstr ""
+
+msgid "Carousel Bg Color"
+msgstr ""
+
+msgid "Carousel container background color"
+msgstr ""
+
+msgid "Items Bg Color"
+msgstr ""
+
+msgid "This option will not override bg colors specified at items tab. Use this if you want same background color for all items."
+msgstr ""
+
+msgid "Font Color"
+msgstr ""
+
+msgid "Font color for items. Leave it blank if you want it to inherit by theme."
+msgstr ""
+
+msgid "Items Padding"
+msgstr ""
+
+msgid "Use it if you want internal spacing for items."
+msgstr ""
+
+msgid "Top:Right:Bottom:Left"
+msgstr ""
+
+msgid "Carousel Css"
+msgstr ""
+
+msgid "Styles here affect carousel container."
+msgstr ""
+
+msgid "Items Css"
+msgstr ""
+
+msgid "Styles here affect all carousel items."
+msgstr ""
+
+msgid "Items Children Css"
+msgstr ""
+
+msgid "Styles here affect all carousel items children, includes title, description & image."
+msgstr ""
+
+msgid "Items Images Css"
+msgstr ""
+
+msgid "Styles here affect all carousel items images."
+msgstr ""
+
+msgid "Templates"
+msgstr ""
+
+msgid "Items Titles Css"
+msgstr ""
+
+msgid "Styles here affect all carousel items Titles."
+msgstr ""
+
+msgid "Items Descriptions Css"
+msgstr ""
+
+msgid "Styles here affect all carousel items Descriptions."
+msgstr ""
+
+msgid "Items Extra Texts Css"
+msgstr ""
+
+msgid "Styles here affect all carousel items ExtraTexts."
+msgstr ""
+
+msgid "Styles"
+msgstr ""
+
+msgid "Styles should have selectors and injected into page. So be aware not to insert loose styles that may affect other elements of page."
+msgstr ""
+
+msgid "Google Fonts Embed"
+msgstr ""
+
+msgid "Animation"
+msgstr ""
+
+msgid "Disable Animation"
+msgstr ""
+
+msgid "Check this if you do not need animation library and do not want it to include related assets at your pages."
+msgstr ""
+
+msgid "Animation Duration"
+msgstr ""
+
+msgid "Animation Delay"
+msgstr ""
+
+msgid "Fill Slider Header with Title attribute"
+msgstr ""
+
+msgid "T"
+msgstr ""
+
+msgid "Fill Description Header with Description attribute"
+msgstr ""
+
+msgid "D"
+msgstr ""
+
+msgid "Add New Slide"
+msgstr ""
+
+msgid "Carousel Lightbox"
+msgstr ""
+
+msgid "Enable Lightbox overrides items links on images."
+msgstr ""
+
+msgid "Lightbox uses original image size. It is a good practice to use smaller image sizes for carousel items. You can define Width/Height of every image at the slides boxes."
+msgstr ""
+
+msgid "Show Title at the Lightbox"
+msgstr ""
+
+msgid "Show Description at the Lightbox"
+msgstr ""
+
+msgid "Effect"
+msgstr ""
+
+msgid "The effect to use when showing the lightbox"
+msgstr ""
+
+msgid "The lightbox theme to use"
+msgstr ""
+
+msgid "Keyboard Nav"
+msgstr ""
+
+msgid "Click Overlay To Close"
+msgstr ""
+
+msgid "If false clicking the \"close\" button will be the only way to close the lightbox"
+msgstr ""
+
+msgid "Touch Wipe"
+msgstr ""
+
+msgid "Add touch wipe to the lightbox"
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "whale_owl_carousel.notice_list"
+msgstr ""
+
+msgid "Add New Carousel"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Keywords"
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Operations"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "No record found."
+msgstr ""
+
+msgid ".image-itemImageID"
+msgstr ""
+
+msgid ".ccm-image-slider-entry"
+msgstr ""
+
+msgid "itemImageID ?>"
+msgstr ""
+
+msgid "Slide"
+msgstr ""
+
+msgid ".ui-dialog-content"
+msgstr ""
+
+msgid "New"
+msgstr ""
+
+msgid "Click to Show/Hide more options"
+msgstr ""
+
+msgid "Click to Remove slide"
+msgstr ""
+
+msgid "Drag to Move slide"
+msgstr ""
+
+msgid "Slide Image"
+msgstr ""
+
+msgid "Caption"
+msgstr ""
+
+msgid "Position : Text Align : Padding : Animation"
+msgstr ""
+
+msgid "Slider Header"
+msgstr ""
+
+msgid "h1"
+msgstr ""
+
+msgid "h2"
+msgstr ""
+
+msgid "h3"
+msgstr ""
+
+msgid "h4"
+msgstr ""
+
+msgid "h5"
+msgstr ""
+
+msgid "h6"
+msgstr ""
+
+msgid "Slide Description"
+msgstr ""
+
+msgid "Slide ExtraText"
+msgstr ""
+
+msgid "Styles here affect all carousel items children, includes images, titles, descriptions & extra texts."
+msgstr ""
+
+msgid "Slide URL / Open in new window"
+msgstr ""
+
+msgid "Slide Image Size"
+msgstr ""
+
+msgid "For default width/height, leave them empty or 0."
+msgstr ""
+
+msgid "Width"
+msgstr ""
+
+msgid "Height"
+msgstr ""
+
+msgid "Item Bg Color"
+msgstr ""
+
+msgid "Bg Color in HEX"
+msgstr ""
+
+msgid "#"
+msgstr ""
+
+msgid "Active"
+msgstr ""
+

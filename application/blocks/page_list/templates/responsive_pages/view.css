@@ -1,0 +1,45 @@
+.search-practice-result{
+	background: #444444;
+	color: #fff;
+}
+.search-practice-list{
+	background: #333333;
+    padding: 35px 40px 35px 20px;
+    box-sizing: border-box;
+}
+.search-practice-list>a{
+	display: block;
+    color: inherit;
+    padding: 15px 0 15px 0;
+    font-size: 25px;
+    border-bottom: 1px solid #444444;
+    font-family: 'Helvetica-Light', sans-serif;
+    transition: ease 0.3s;
+	color: #ffffff !important;
+}
+.search-practice-overview-item-title{
+	font-size: 33px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    font-family: 'Georgia', sans-serif;
+	color: #ffffff;
+}
+.search-practice-overview-item-title a{
+	color: #ffffff !important;
+}
+.search-practice-overview-item-text {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+.search-practice-overview-item {
+    padding: 40px 40px 40px 40px;
+    display: none;
+}
+@media(max-width:767px){
+	.search-practice-list{
+		display: none;
+	}
+	.search-practice-overview-item {
+		display: block;
+	}
+}

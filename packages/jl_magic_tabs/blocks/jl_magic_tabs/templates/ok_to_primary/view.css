@@ -1,0 +1,83 @@
+/*
+Magic Tabs by John Liddiard (aka JohntheFish)
+www.jlunderwater.co.uk
+This software is licensed under the terms described in the concrete5.org marketplace.
+Please find the add-on there for the latest license copy.
+
+Create a tabbed interface simply by inserting magic tabs blocks into the page
+*/
+
+.jl_magic_tabs_ok_to_primary  ul.nav-tabs.nav li,
+.jl_magic_tabs_ok_to_primary  ul.tabs li {
+    list-style-type:none;
+}
+.jl_magic_tabs_ok_to_primary  ul.nav-tabs.nav li{
+    margin-top:3px;
+}
+.jl_magic_tabs_controls{
+    position:relative;
+}
+
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success,
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success:hover,
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success:visited,
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success:active,
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success.primary,
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success.primary:hover,
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success.primary:visited,
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success.primary:active
+{
+    color: #ffffff!important;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration:none!important;
+}
+
+
+
+/* selected tab*/
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success.primary{
+    background-color: #428BCA;
+    border-color: #357EBD;
+}
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success.primary:hover {
+    background-color: #3276B1;
+    border-color: #285E8E;
+}
+
+/* basic tab*/
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success {
+    background-color: #5CB85C;
+    border-color: #4CAE4C;
+}
+.jl_magic_tabs_ok_to_primary ul.nav-tabs.nav li a.btn.success:hover {
+    background-color: #47A447;
+    border-color: #398439;
+}
+
+/*
+Accordion styles
+*/
+
+/* Fill whole width */
+.jl_magic_tabs_ok_to_primary.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li {
+    width:100%;
+}
+
+/* Cursor so to indicate click to collapse */
+.jl_magic_tabs_ok_to_primary.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li>a.success.primary {
+    cursor:pointer;
+}
+
+/* + to indicate expandable */
+.jl_magic_tabs_ok_to_primary.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li>a:after {
+    content: "+";
+    font-weight:900;
+    float: right;
+    text-decoration: none;
+    font-size:140%;
+}
+/* - to indicate collapsible */
+.jl_magic_tabs_ok_to_primary.ccm-ui.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion>ul.nav-tabs.nav.jl_magic_tabs>li>a.success.primary:after {
+    content: "-";
+}
+

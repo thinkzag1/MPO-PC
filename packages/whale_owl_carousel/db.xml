@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="whaleOwlCarousel">
+		<field name="id" type="I">
+			<key/>
+			<autoincrement/>
+			<unsigned/>
+		</field>
+		<field name="carouselName" type="C" size="255"></field>
+		<field name="carouselPlugin" type="C" size="50"></field>
+		<field name="carouselTheme" type="C" size="50"></field>
+		<field name="options" type="X2"></field>
+		<field name="items" type="X2"></field>
+	    <field name="dateAdded" type="T"><default value="0000-00-00 00:00:00"/><notnull/></field>
+	    <field name="dateModified" type="T"><default value="0000-00-00 00:00:00"/><notnull/></field>
+	    <field name="fmUID" type="I" size="10"><default value="0"/><unsigned/></field>
+	    <field name="lmUID" type="I" size="10"><default value="0"/><unsigned/></field>
+	</table>
+</schema>

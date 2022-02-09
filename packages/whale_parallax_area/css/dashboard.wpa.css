@@ -1,0 +1,95 @@
+.ccm-ui .well td:first-child{
+	width:50%;
+}
+.ccm-ui .well.slide-container {
+    border: 2px solid rgba(9, 183, 91, 1);
+}
+.ccm-ui .well.slide-container.new-slide {
+    border: 2px solid rgba(40, 240, 134, 1);
+}
+#item-row-wrap{
+	padding-bottom: 20px;
+}
+.ccm-ui .well #form_slider_design label{/*it mess with color picker*/
+    /*display:none;*/
+}
+.ccm-ui .well div.ccm-color-swatch-wrapper div.ccm-color-swatch{/*align color picker with textfields*/
+    top:-4px;
+}
+/**/
+.ccm-ui .well td:first-child{
+	width:50%;
+}
+#item-row-wrap{
+	padding-bottom: 20px;
+}
+
+#whale-form .row{
+}
+#whale-form .row:first-child{
+}
+#whale-form hr{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-color: #ddd;
+}
+
+#whale-form .control-label{
+    text-align: left;
+}
+#whale-form .text-muted{
+    font-weight: normal;
+    font-size:small;
+}
+#whale-form .input-group{
+    margin-bottom: 5px;
+}
+#whale-form .label{
+    margin-top: 5px;
+}
+
+
+/*well headers*/
+#whale-form h2{
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+    font-size: 25px!important;
+    font-weight: bold;
+    line-height: 30px;
+}
+#whale-form h2 a{
+    color: #333!important;
+    font-size: 15px;
+    line-height: 30px;
+}
+#whale-form h2 a i{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+}
+#whale-form textarea{
+    height: 4em;
+}
+
+
+.stripe-1 {
+  background: repeating-linear-gradient(
+    -45deg,
+    #f5f5f5,
+    #f5f5f5 10px,
+    #f9f9f9 10px,
+    #f9f9f9 20px
+  );
+}
+
+.whale-table .label{
+    font-size: 1.05em;
+}
+.whale-table a[data-toggle="popover"]{
+    display: inline-block;
+    padding: 0;
+}
+.whale-table a[data-toggle="popover"]:hover{
+    background-color: transparent!important;
+}
+

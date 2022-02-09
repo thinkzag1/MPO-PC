@@ -1,0 +1,126 @@
+.ccm-ui .well td:first-child{
+	width:50%;
+}
+#item-row-wrap{
+	padding-bottom: 20px;
+}
+
+#whale-form .row{
+}
+#whale-form .row:first-child{
+}
+#whale-form hr{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-color: #ddd;
+}
+
+#whale-form .control-label{
+    text-align: left;
+}
+#whale-form .text-muted{
+    font-weight: normal;
+    font-size:small;
+}
+#whale-form .input-group{
+    margin-bottom: 5px;
+}
+#whale-form .label{
+    margin-top: 5px;
+}
+
+
+/*well headers*/
+#whale-form h2{
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+    font-size: 25px!important;
+    font-weight: bold;
+    line-height: 30px;
+}
+#whale-form h2 a{
+    color: #333!important;
+    font-size: 15px;
+    line-height: 30px;
+}
+#whale-form h2 a i{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+}
+#whale-form textarea{
+    height: 4em;
+}
+
+/*slides editor*/
+    .ccm-image-slider-entries {
+        padding-bottom: 30px;
+    }
+    .ccm-image-slider-entries .ccm-image-slider-entry.well{
+        border: 2px solid rgba(9, 183, 91, 1);
+    }
+    .ccm-image-slider-entries .ccm-image-slider-entry.well.new-slide{
+        border: 2px solid rgba(40, 240, 134, 1);
+    }
+
+    .ccm-pick-slide-image {
+        padding: 5px 15px;
+        cursor: pointer;
+        background: #dedede;
+        border: 1px solid #cdcdcd;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    .ccm-pick-slide-image img {
+        max-width: 100%;
+    }
+
+    .ccm-image-slider-entry {
+        position: relative;
+    }
+
+.nav-tabs input[type="checkbox"]{
+    margin: 0!important;
+}
+
+#whale-form .internal{
+    margin-top: 2px;
+}
+
+.stripe-1 {
+  background: repeating-linear-gradient(
+    -45deg,
+    #f5f5f5,
+    #f5f5f5 10px,
+    #f9f9f9 10px,
+    #f9f9f9 20px
+  );
+}
+.animation-display{
+    border: 0px solid #ddd!important; 
+    font-size: 50px!important; 
+    color: #4A4A4A!important; 
+
+    text-align: center!important; 
+    vertical-align: middle!important; 
+    padding-top: 10%;
+}
+#animate-repeat{
+    cursor: pointer;
+}
+
+/*compact textfields for input-groups*/
+.compact{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.compact.first{
+    padding-left: 15px!important;
+}
+.compact .input-group-addon{
+    padding: 6px 6px!important;
+}
+.compact .form-control{
+    padding: 6px 6px!important;
+}
